@@ -1,0 +1,10 @@
+//HD's SNDINFO for Doom (proprietary)
+
+misc/bullethit		dspunch		$volume misc/bullethit 0.5
+
+ghost/active  dspodth1  $pitchset ghost/active 0.2 $volume ghost/active 0.1
+
+potion/open       dsgopen
+potion/swish      dspbtl
+potion/away       dsfclk
+potion/bounce     dsding    $volume potion/bounce 0.4   $limit misc/casing 0

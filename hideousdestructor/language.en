@@ -1,0 +1,1273 @@
+[enu]
+TAG_ARMOUR="armor";
+TAG_GARRISONARMOUR="garrison armor";
+TAG_BATTLEARMOUR="battle armor";
+TAG_GARRISONARMOUR_SPARE="garrison armor (spare)";
+TAG_BATTLEARMOUR_SPARE="battle armor (spare)";
+PICKUP_GARRISONARMOUR="Picked up the garrison armor.";
+PICKUP_BATTLEARMOUR="Picked up the battle armor.";
+HDCONTROLS_STRIPARMOUR="Strip Armor";
+
+
+[en enc eng eni ena enz default]
+HD_SENTENCEBREAK=". ";
+
+MNU_CHOOSECLASS="CHOOSE LOADOUT:";
+
+PLYRMNU_PLAYERCLASS="Loadout";
+PLYRMNU_PLAYERGENDER="Pronoun";
+OPTVAL_MALE="He";
+OPTVAL_FEMALE="She";
+OPTVAL_NEUTRAL="They";
+OPTVAL_OTHER="It";
+
+STARTUP1="        \cq~ \cr* \cq~";
+STARTUP2=" \cyHideous Destructor \cx4.10.0c\cypre";
+STARTUP3=" Please read the manual.";
+STARTUP4="       Have fun!";
+STARTUP5="        \cq~ \cr* \cq~";
+
+SKILL_BABY="Homely";
+SKILL_EASY="Ugly";
+SKILL_NORMAL="Grotesque";
+SKILL_HARD="Hideous";
+SKILL_NIGHTMARE="b e a u t i f u l";
+
+OB_BOT="%o died.";
+
+// Zombies
+FN_WOLFSS="sailor";
+
+CC_MARINE="operator";
+
+OB_MARINE="%o was shot up by another operator.";
+OB_MARINEHIT="%o violated another operator's personal space.";
+
+OB_VULCZOMBIE="%o had barreled right into a zombie's hephty firepower.";
+
+OB_SHOTGUNZOMBIE="%o was shot up by the Tyrant's jack-booted thugs.";
+OB_SHOTZOMB_HIT="%o was beaten up by the Tyrant's jack-booted thugs.";
+
+TAG_ZOMBSHOTGUN="jackboot";
+
+OB_ZOMBRIFLE="%o was gunned down by a zombie.";
+OB_ZOMBRIFLE_HIT="%o was beaten up by a zombie.";
+
+TAG_BLURSPHEREZOMBIE="blursphere zombie";
+
+TAG_SQUADGHOST="Ghost";
+
+OB_ZOMBPISTOL="%o couldn't hit a pistol zombie.";
+OB_ZOMBPISTOL_HIT="%o was whipped by a pistol zombie.";
+
+OB_ZOMNAZI="%o halted.";
+
+// Demons
+OB_YOKAI="%o watched a yokai.";
+TAG_YOKAI="yokai";
+
+CC_IMPM="serpentipede fireballer";
+CC_IMPH="serpentipede healer";
+OB_IMP="%o was marinated by the serpentipedes.";
+OB_IMP_HIT="%o was tenderized by the serpentipedes.";
+OB_IMPM="%o experienced the magic.";
+OB_IMPM_HIT="%o experienced ALL the magic.";
+OB_IMPH="%o could feel the schadenfreude.";
+OB_IMPH_HIT="%o said I want a second opinion, so the serpentipedes said okay you're ugly too.";
+
+TAG_BARREL="barrel";
+TAG_FIRECAN="burning barrel";
+OB_BARREL="%o was rolled by a barrel.";
+OB_FIRECAN="%o should try again. It's a killer fire CAN, not a killer fire CAN'T!";
+
+TAG_BABUIN="babuin";
+OB_BABUIN="%o was mauled by a babuin.";
+
+TAG_SPECBABUIN="cloaked babuin";
+
+TAG_NINJAPIRATE="ninja pirate";
+OB_NINJAPIRATE="%o died.";
+
+TAG_PUTTO="putto";
+OB_PUTTI="Putti putti putti putti, everyone let's eat %o, giga-putti!";
+
+OB_HATCHLING="%o was zapped by a hatchling.";
+
+OB_TRILOBITE="%o was inverted by a Trilobite.";
+
+OB_COMBATSLUG="%o was smoked by a Combat Slug.";
+
+OB_BONER="%o was bagged by a boner.";
+OB_BONERSLAP="%o was slapped by a boner.";
+
+OB_TECHNOSPIDER="%o was hammered by a technospider.";
+
+OB_MATRIBITE="%o's matter was blown to bits by a matribite.";
+OB_MATRIBITE_HIT="%o tried to look for the hatchlings' parents. Well %g found them.";
+
+OB_NECROMANCER="%o met the firepower of the Necromancer.";
+
+OB_TECHNORANTULA="%o was operated upon by the Technorantula.";
+
+OB_CYBER="%o was experimented upon by a Tripod.";
+
+CC_FLAME="animate flame";
+
+//because "%k checks %p glasses" means the killer checks the victim's glasses. oops.
+OB_FRIENDLY2="%k might need new glasses after this.";
+OB_SUICIDE="%o had an aneurysm.";
+OB_KILLEDSELF="%o took a calculated risk.";
+OB_FALLING="%o had deceleration issues.";
+OB_DEFAULT="Congratulations! %o has died.";
+OB_DERP="%o went derp.";
+OB_HERP="%o went herp.";
+OB_IED="%o was blown up by an anonymous %k.";
+OB_BFG9000ID="%o was smacked by %k's big green gob.";
+OB_BFG9000="%o just got glassed and no one leaves here till we find out %k did it!";
+OB_BOSS="%o sure showed %k who was the boss!";
+OB_BRONTO="%o was terrorized by %k's Brontornis cannon.";
+OB_ROCKET="%o was fragged by %k.";
+OB_LIB="%o was liberated by %k";
+OB_VULC="%o barreled right into %k's hephty firepower.";
+OB_ZM66="%o was assaulted by %k.";
+OB_SMG="%o was soaked by %k's pea stream.";
+OB_REVOLVER="%o got capped by %k's six-pea shooter.";
+OB_PISTOL="%o got capped by %k's pea shooter.";
+OB_FIST="%o was knocked out by %k.";
+OB_THUNDERBUSTER="%o was hammered by %k's particle beam.";
+OB_BLOOPER="%o was blooped by %k.";
+
+OB_AMMOBOX="%o paid no attention to Admiral Ackbar.";
+
+BS_PRECIOUS="Precious.";
+BS_PKUP="So precious in your sight.";
+
+// Tags below - [Ted]
+TAG_FIST="fist";
+TAG_PISTOL="pistol";
+TAG_REVOLVER="revolver";
+TAG_SMG="SMG";
+TAG_HUNTER="pump shotgun";
+TAG_SLAYER="side-by-side shotgun";
+TAG_ZM66="ZM66 assault rifle";
+TAG_VULC="Vulcanette";
+TAG_GL="grenade launcher";
+TAG_RL="rocket launcher";
+TAG_THUNDER="Thunder Buster";
+TAG_LIB="Liberator battle rifle";
+TAG_LIB_NOGL="Liberator rifle (no GL)";
+TAG_LIB_CLASSIC="Liberator Rifle (classic)";
+TAG_LIB_CLASSICNOGL="Liberator Rifle (classic nogl)";
+TAG_BRONTO="Brontornis cannon";
+TAG_BOSS="Boss rifle";
+TAG_GREFRAG="fragmentation grenade";
+
+TAG_DERP="D.E.R.P. robot";
+TAG_HERP="H.E.R.P. robot";
+TAG_HERPINTERFACE="H.E.R.P. interface";
+
+TAG_PISTOLAMMO="9mm round";
+TAG_REVOLVERAMMO=".355 round";
+TAG_SHOTGUNSHELLS="Shotgun Shells";
+TAG_426AMMO="4.26mm UAC Standard round";
+TAG_7MMAMMO="7.76mm round";
+TAG_7MMAMMOR="7.76mm round (Recast)";
+TAG_7MCASING="7.76mm casing";
+TAG_BRONTOSHELL="Brontornis shell";
+TAG_ROCKETGRENADE="rocket grenade";
+TAG_HEATROCKET="H.E.A.T. rocket";
+TAG_DUDROCKET="dud rocket";
+
+TAG_9MMAG15="9mm pistol magazine";
+TAG_4MMAG="4.26mm UAC Standard magazine";
+TAG_9MMAG30="9mm SMG magazine";
+TAG_7MMAG="7.76mm magazine";
+TAG_7MCLIP="7.76mm clip";
+TAG_BATTERY="Battery";
+
+TAG_BACKPACK="Backpack";
+TAG_LITEAMP="light amplification visor";
+TAG_RADSUIT="environment suit";
+TAG_AMMOBOX="ammo box";
+TAG_AMMOBOXDISARMED="disarmed ammo box";
+TAG_KEYS="keys";
+TAG_MAPGIVER="local area map";
+
+TAG_BLOODPACK="synthetic blood";
+TAG_DOORBUSTER="door buster";
+TAG_IEDKIT="IED kit";
+TAG_JETPACK="jetpack";
+TAG_LADDER="portable ladder";
+TAG_RELOADER="7.76mm reloading device";
+
+TAG_POTION="ectoplasmic polyp";
+TAG_TALISMAN="summoning talisman";
+
+TAG_STIMPACK="stimpack";
+TAG_ZERKPACK="berserk pack";
+TAG_MEDIKIT="medikit";
+TAG_2NDFLESHAPP="Second Flesh applicator";
+TAG_BANDAGES="improvised bandaging";
+
+TAG_ARMOUR="armour";
+TAG_GARRISONARMOUR="garrison armour";
+TAG_BATTLEARMOUR="battle armour";
+TAG_GARRISONARMOUR_SPARE="garrison armour (spare)";
+TAG_BATTLEARMOUR_SPARE="battle armour (spare)";
+
+TAG_PICKUPMANAGER="Pickup Manager";
+
+// Pickups below - [Ted]
+PICKUP_BFG9000="You got the SKAG 1337!";
+PICKUP_BOSSRIFLE="You got the bolt-action rifle!";
+PICKUP_BRONTO="You got the Brontornis!";
+PICKUP_RL="You got the rocket launcher!";
+PICKUP_THUNDERBUSTER="You got the particle beam gun!";
+PICKUP_LIB="You got the battle rifle!";
+PICKUP_VULC="You got the Vulcanette!";
+PICKUP_VULC_MEH="You got a Vulcanette.";
+PICKUP_VULC_PERFECT=" It's coward killing time!";
+PICKUP_VULC_WORN=" It has seen better days.";
+PICKUP_VULC_DAMAGED=" It is in dire need of repair.";
+PICKUP_VULC_BROKEN=" It might be salvageable for ammo.";
+PICKUP_ZM66="You got the assault rifle!";
+PICKUP_SEMIZM66="Picked up a semi-automatic weapon. Time for some carnage!";
+PICKUP_SLAYER="You got the double-barreled shotgun!";
+PICKUP_HUNTER="You got the pump-action shotgun!";
+PICKUP_HUNTER_AUTO=" You notice some tool marks near the fire selector...";
+PICKUP_HUNTER_EXPORT=" Where is the fire selector on this thing!?";
+PICKUP_SMG="You got the SMG!";
+PICKUP_REVOLVER="You got the revolver!";
+PICKUP_PISTOL="You got the pistol!";
+PICKUP_CHAINSAW="You got the chainsaw! Go find some meat!";
+PICKUP_GRENADE="Picked up a fragmentation hand grenade.";
+PICKUP_BLOOPER="You got the grenade launcher!";
+
+PICKUP_DERP="Picked up a Defense, Engagement, Reconnaissance and Patrol robot.";
+PICKUP_DERP_BROKEN=" It is damaged.";
+PICKUP_HERP="Picked up a Heavy Engagement Rotary Platform robot.";
+PICKUP_HERP_BROKEN=" It is damaged.";
+
+PICKUP_PistolAmmo="Picked up a 9mm round.";
+PICKUP_PistolAmmoPlural="Picked up some 9mm ammo.";
+PICKUP_RevolverAmmo="Picked up a .355 round.";
+PICKUP_RevolverAmmoPlural="Picked up some .355 ammo.";
+PICKUP_ShotgunShell="Picked up a shotgun shell.";
+PICKUP_ShotgunShellPlural="Picked up some shotgun shells.";
+PICKUP_426Round1="Picked up a stray 4.26 UAC Standard round.";
+PICKUP_426Round2="Picked up a stray block of 4.26 UAC Standard rounds.";
+Pickup_7mmRound="Picked up a 7.76mm round.";
+Pickup_7mmRoundRecast="Picked up a recast 7.76mm round.";
+Pickup_7mmBrass="Picked up some brass.";
+Pickup_7mmRoundPlural="Picked up some 7.76mm rounds.";
+PICKUP_BRONTOROUND="Picked up a Brontornis round.";
+PICKUP_ROCKETGRENADE="Picked up a rocket grenade.";
+PICKUP_ROCKETBOX="Picked up some rocket grenades.";
+PICKUP_DUDROCKET="Picked up a defused rocket grenade.";
+PICKUP_DUDROCKETNEW="Picked up (and defused) a rocket grenade.";
+PICKUP_HEATROCKET="Picked up a H.E.A.T. round.";
+
+PICKUP_9MMAG="Picked up a pistol magazine.";
+PICKUP_4MMAG="Picked up a 4.26 UAC Standard magazine.";
+PICKUP_9MMAG30="Picked up an SMG magazine.";
+PICKUP_7MMAG="Picked up a 7.76mm magazine.";
+PICKUP_7MCLIP="Picked up a 7.76mm clip.";
+PICKUP_BATTERY="Picked up a battery.";
+
+PICKUP_BACKPACK="Picked up a backpack to help fill your life with ammo!";
+PICKUP_LITEAMP="Light amplification visor.";
+PICKUP_RADSUIT="Environmental shielding suit.";
+
+PICKUP_BLOODPACK="Picked up a synthblood pack.";
+PICKUP_DOORBUSTER="Picked up a Door Buster.";
+PICKUP_IED="Picked up an IED kit.";
+PICKUP_JETPACK="You got the jetpack!";
+PICKUP_LADDER="Picked up a ladder.";
+PICKUP_RELOADER="You got the 7.76 reloading machine!";
+
+PICKUP_POTION="Harvested an ectoplasmic polyp.";
+PICKUP_BLURSPHERE="Limited invisibility.";
+PICKUP_TALISMAN="Picked up a summoning talisman.";
+
+PICKUP_STIMPACK="Picked up a stimpack.";
+PICKUP_ZERKPACK="Picked up a berserk pack.";
+PICKUP_MEDIKIT="Picked up a medikit.";
+PICKUP_OPENAPPLICATOR="Picked up an opened medikit.";
+PICKUP_USEDAPPLICATOR="Picked up a used medikit.";
+
+PICKUP_GARRISONARMOUR="Picked up the garrison armour.";
+PICKUP_BATTLEARMOUR="Picked up the battle armour.";
+
+// Misc non-pickup and non-tag stuff down here. - [Ted]
+
+
+ARMOUR_PUTON="Putting on ";
+ARMOUR_REMOVE="Removing ";
+DURABILITY_95="The plating does not pass certification.";
+DURABILITY_75="The weave has definitely seen better days.";
+DURABILITY_6="It's better than nothing.";
+DURABILITY_3="You cover your shameful nakedness with your filthy rags.";
+DURABILITY_1="Just don't get hit.";
+
+TALISMAN_SUMMON1="They shall stand again and hear there/a horn in the hills ringing./Whose shall the horn be?";
+TALISMAN_SUMMON2="For this war will last/through years uncounted/and you shall be summoned/once again ere the end.'";
+TALISMAN_SUMMON3="Faint cries I heard, and dim horns blowing,/and a murmur as of countless far voices;/it was like the echo of some forgotten battle/in the Dark Years long ago.";
+TALISMAN_SUMMON4="Pale swords were drawn; but I know not/whether their blades would still bite,/for the Dead needed no longer/any weapon but fear.'";
+
+BACKPACK_TOOFULL="Your backpack is too full.";
+BACKPACK_TOP="\c[DarkBrown][] [] [] \c[Tan]Backpack \c[DarkBrown][] [] []";
+BACKPACK_TOTALBULK="Total Bulk: \cf";
+BACKPACK_NOITEMS="No items found.";
+BACKPACK_INBAG="In backpack:  ";
+BACKPACK_ONPERSON="On person:  ";
+
+MEDIKIT_USEUNWRAPPED="You pull out the medikit you've already unwrapped.";
+MEDIKIT_USEUNWRAPPEDHELP="(Hold Use (door) while using the new medikit to force-open a new one.)";
+MEDIKIT_UNKNOWN="** UNKNOWN **";
+MEDIKIT_NOSUTURES="You are out of Auto-Sutures.";
+MEDIKIT_NOBURNS="You have no burns to treat.";
+MEDIKIT_NOWOUNDS="You have no wounds to treat.";
+MEDIKIT_FIRETOHEAL="\cg+++ \cjMEDIKIT \cg+++\c-\n\n\nPress and hold Fire\nto patch yourself up.";
+MEDIKIT_OTHERWOUNDS="They have no injuries to treat.";
+MEDIKIT_NOTHINGTOBEDONE="Nothing to be done here.\n\nHeal thyself? (press fire)";
+MEDIKIT_USEDSYRINGE="Run away!\n\n%s is trying to stab you\n\nwith a used syringe!!!";
+MEDIKIT_ATTACKUSED="Why are you attacking your teammate\n\nwith used medical equipment!?";
+MEDIKIT_OTHERUSEONYOU="%s is trying to use a medikit on you.\nStay still to let them or tell them to leave...";
+MEDIKIT_STAYSTILL="You'll need them to stay still...";
+MEDIKIT_TAKEOFF1="Get them to take off their ";
+MEDIKIT_TAKEOFF2=" first!\n\n(\cdhd_strip\c- in the console)";
+MEDIKIT_OTHERNOWOUNDS="They have no wounds to treat.";
+MEDIKIT_OTHERNOBURNS="They have no burns to treat.";
+MEDIKIT_TARGETNOPED="Target disconnected!";
+MEDIKIT_WOUNDSEALED="Wound successfully sealed.";
+MEDIKIT_AUTODIAGNOSTIC="\cdMedikit Auto-Diagnostic Tool engaged.\c-\n\n\ccScanning, please wait...";
+MEDIKIT_AUTODIAGNOSTICFAIL="\caMedikit Auto-Diagnostic Tool failed.";
+MEDIKIT_AUTODIAGNOSTICFOR="Medikit Auto-Diagnostic for \cy\n";
+MEDIKIT_WOUNDS="\n\n\ccWounds:\cg\cu";
+MEDIKIT_BURNS="\n\ccBurns: \cq";
+MEDIKIT_TISSUEDAMAGE="\n\ccTissue Damage: \cq";
+MEDIKIT_BLOODLOSS="\n\ccBlood loss: \ca";
+MEDIKIT_TRANSFUSIONUNITS=" \cctransfusion units";
+MEDIKIT_NONE=" none";
+
+BANDAGES_TEXT1="\cu--- \ccBANDAGING \cu---\c-\n\n\nPress and hold Fire\n\nwhile standing still\n\nto try to not die.";
+BANDAGES_TEXT2="\cu--- \ccBANDAGING \cu---\c-\n\n\nPress and hold Fire to bandage\n\nyourself when you are bleeding.\n\n\n\nPress and hold Altfire\n\nto bandage someone else.";
+BANDAGES_NOWOUNDS="There is no wound to treat.";
+BANDAGES_STAYSTILL="You must stay still\n\nto bandage yourself!";
+BANDAGES_NOTBLEEDING="You are not bleeding.";
+BANDAGES_STABLE="You seem to be stable.";
+BANDAGES_NOTHINGDONE="Nothing to be done here.\n\nHeal thyself?";
+BANDAGES_SOMEONEBANDAGING="%s is trying to bandage you.\n\nStay still to let them or\ntell them to leave...";
+BANDAGES_STAYSTILLOTHER="You'll need them to stay still...";
+BANDAGES_OTHERNOTBLEEDING="They're not bleeding.";
+BANDAGES_WORKINGON="Working on ";
+
+BLOODBAG_HOLDFIRE="\cr::: \cgSECOND BLOOD \cr:::\c-\n\n\nPress and hold Fire\nto attach.";
+BLOODBAG_NOVALIDPATIENT="No valid patient in range.";
+BLOODBAG_PATIENTHAS="Patient has";
+BLOODBAG_YOUHAVE="You have";
+BLOODBAG_INJECTORIN=" a blood injector already!";
+
+STIMPACK_NONEED="They don't need it.";
+STIMPACK_NOTHINGTOBEDONE="Nothing to be done here.\n\nStimulate thyself? (press fire)";
+STIMPACK_TAKEOFFOTHER="You'll need them to take off their ";
+STIMPACK_ELIPSES="...";
+STIMPACK_OVERDOSEPLAYER="Run away!!!\n\n%s is trying to overdose you!";
+STIMPACK_FIDGETY="They seem a bit fidgety...";
+STIMPACK_STOPSQUIRMING="Stop squirming!\n\n%s only wants to\n\ngive you some drugs...";
+STIMPACK_STAYSTILLOTHER="You'll need them to stay still...";
+STIMPACK_SEEMFIDGETY="They seem a bit fidgety already...";
+STIMPACK_HELPTEXT="\cd<<< \cjSTIMPACK \cd>>>\c-\n\n\nStimpacks help reduce\nbleeding temporarily\n\nand boost performance when injured.\n\n\Press altfire to use on someone else.\n\n\cgDO NOT OVERDOSE.";
+
+ZERKPACK_MAINHELPTEXT="\cr*** \caBERSERK \cr***\c-\n\n\nBerserk packs help increase\ncombat capabilities temporarily.\n\n\Press altfire to use on someone else.";
+
+FIST_KILL1="kill";
+FIST_KILL2="k i l l";
+FIST_KILL3="k I L L";
+FIST_KILL4="K\n   I\n       L\n          L";
+FIST_KILL5="Kill.";
+FIST_KILL6="KILL";
+FIST_KILL7="k i l l";
+FIST_KILL8="Kill!";
+FIST_KILL9="K  I  L  L";
+FIST_KILL10="kill...";
+FIST_KILL11="Kill...";
+FIST_KILL12="k i l l . . .";
+FIST_KILL13="      kill";
+FIST_KILL14="  ... kill ...";
+FIST_KILL15="kill,";
+FIST_KILL16="kiiiilllll!!!";
+FIST_KILL17="kill~";
+FIST_KILL18="kill <3";
+FIST_KILL19="kill uwu";
+
+POTION_TEXT1="\ci::: \ckECTOPLASM \ci:::\c-\n\n\nNot made\nby human hands.\n\nBeware.";
+BLUES_POWER="You feel power coming out of you.";
+
+BLURSPHERE_ITHURTS="it hurts";
+BLURSPHERE_NOISE="noise";
+BLURSPHERE_NO="no";
+BLURSPHERE_HELLO="hello";
+BLURSPHERE_ANGRY1="you die";
+BLURSPHERE_ANGRY2="blood";
+BLURSPHERE_ANGRY3="i hate you";
+BLURSPHERE_ANGRY4="worthless";
+BLURSPHERE_ANGRY5="error";
+BLURSPHERE_ANGRY6="your eyes";
+BLURSPHERE_ANGRY7="nothing";
+
+PICKUP_INFERIORMAG="Discarding inferior mag to make room.";
+PICKUP_MAGFIREMODE="Firemode held but target mag not better. Swap aborted.";
+PICKUP_EXCEEDED=" exceeded.";
+PICKUP_POCKETSFULL="No room in pockets.";
+
+HERP_NOBATTERY="Operational fault. Please check your manual for proper maintenance. (ERR-4fd92-00B) Power low.";
+HERP_NOMAG="Operational fault. Please check your manual for proper maintenance. (ERR-42392-41A) Cartridge empty. Shutting down...";
+HERP_BADMAG="Operational fault. Please check your manual for proper maintenance. (ERR-74x29-58A) Unsupported ammunition type.\n\n\cjPlease note: Reloading a 4.26 UAC Standard magazine or its components without the supervision of a Volt UAC Standard Certified Cartridge Professional(tm) is a breach of the Volt End User License Agreement.";
+HERP_NOINTERFACE="Operational fault. Please check your manual for proper maintenance. (ERR-8w8i7-8VX) No interface detected.";
+HERP_SYSTEMRESTART="Illegal operation. Please check your manual for proper maintenance. (ERR-u0H85-6NN) System will restart.";
+HERP_TAMPEREDSYSTEM="Illegal operation. Identify Friend/Foe system has been tampered with. Please contact your commanding officer immediately. (ERR-0023j-000) System will halt.";
+HERP_FORMATC="Formatting C:\\ (DBG-444j2-0A0)";
+HERP_DEVMODE="Testing mode initialized.  (DBG-86nm8-BN5) Cache cleared.";
+HERP_OBJECTNOTMAPPED="*** Fatal Error *** Address not mapped to object (signal 11) Address: 0x8";
+HERP_SEGMENTATIONFAULT="*** Fatal Error *** Segmentation fault (signal 11) Address: (nil)";
+HERP_ENEMY="IFF system alert: enemy pattern recognized.";
+HERP_ESTABLISHING="Establishing connection...";
+HERP_CONNECTED="Connected!";
+HERP_DISCONNECTED="Disconnected.";
+HERP_DAMAGEDBEYONDFUNCTION="Damaged beyond function. Remove battery before attempting repairs.";
+HERP_NOPOWER="No power. Please load 1 cell pack before deploying.";
+HERP_REPAIRPACK="You repair one of the broekn H.E.R.P.s in your backpack.";
+HERP_REPAIRPACK_FAIL="You destroy one of the broken H.E.R.P.s in your backpack in your repair efforts.";
+HERP_REPAIRED="You bring your H.E.R.P. back into working condition.";
+HERP_CANNIBALIZED="Another H.E.R.P. was cannibalized for parts.";
+HERP_REPAIRBROKEN="You repair one of your broken H.E.R.P.s.";
+HERP_REPAIRBROKEN_FAIL="You destroy one of your broken H.E.R.P.s in your repair efforts.";
+HERP_FIELDREPAIRS="You manage some improvised field repairs to your H.E.R.P. robot.";
+HERP_NOCONTROLLER="No controller connection available. Bring up the interface with an idle H.E.R.P. connected first.";
+HERP_NEXTTAG="\cd[HERP] \cjNext HERP tag set to \cy%i";
+HERP_EMPTY="\cd[HERP] \crERROR:\cj HERP at [\cj%i\cu,\cj%i\cu] out of ammo or cells, \cxNOT\cj activated.";
+HERP_NOANGLECHANGE="\cd[HERP] \crERROR:\cj No angle change indicated.";
+HERP_NOWFACING="\cd[HERP] \cj HERP at [\cj%i\cu,\cj%i\cu]\cj base angle now facing %s";
+HERP_FACING="\cd[HERP] \cu [\cj%i\cu,\cj%i\cu]\cj facing %s \cy%i\cj %s";
+HERP_INACTIVE="\cyinactive";
+HERP_ACTIVE="\cxACTIVE";
+HERP_BADCOMMAND1="\cd[HERP] \cj%sCommand format:\cu herp <option> <tag number> <direction>\n\cjOptions\n 1 = ON\n 2 = OFF\n 3 = DIRECTION (counterclockwise in degrees)\n 123 = QUERY\n -n = set tag number\n\cj  tag number on next deployment: \cy%i";
+HERP_BADCOMMAND2="No HERPs currently deployed.\n";
+HERP_TAG1="\cd[HERP] \cj%i HERP%s %s%s\cj.";
+HERP_TAG2="with tag \ca%i\cj ";
+HERP_VHACKED="hacked";
+HERP_VON="\cxactivated";
+HERP_VOFF="\cydeactivated";
+HERP_VDIRECTED="\curedirected";
+HERP_VSCANTOG="\cbscan toggled";
+HERP_NODEPLOYED="No H.E.R.P.s deployed. Abort.";
+HERP_NEXTLIST="Switching to next H.E.R.P. in the list.";
+
+DERP_ALERT1="Derpy derp!";
+DERP_ALERT2="\cd[DERP";
+DERP_ALERT3="(\cj";
+DERP_ALERT4="\cd)";
+DERP_ALERT5="]\cj  ";
+DERP_AIM="\cjEngaging hostile.";
+DERP_KILL="\cf  Hostile eliminated.";
+DERP_STANDBY="\cg  Operational fault.\cj Standby for repairs.";
+DERP_NOAMMO="\cjOut of ammo. Await retrieval.";
+DERP_BROKEN="\cm<broken>";
+DERP_WAIT="\ccWAIT";
+DERP_LINE="\ceLINE";
+DERP_TURRET="\caTURRET";
+DERP_PATROL="\cgPATROL";
+DERP_BOTID="\cubotid \cy";
+DERP_NOMAG="\cm<no mag>";
+DERP_MAG="Mag:  ";
+DERP_REPAIRPACK="You repair one of the broken D.E.R.P.s in your backpack.";
+DERP_REPAIRPACK_FAIL="You destroy one of the broken D.E.R.P.s in your backpack in your repair efforts.";
+DERP_REPAIR="You repair one of your broken D.E.R.P.s.";
+DERP_REPAIR_FAIL="You destroy one of your broken D.E.R.P.s in your repair efforts.";
+DERP_FIELDREPAIR="You manage some improvised field repairs to your D.E.R.P. robot.";
+DERP_REMOVEMAG="Remove magazine before attempting repairs.";
+DERP_REPAIRED="You bring your D.E.R.P. back into working condition.";
+DERP_CANNIBALIZED="Another D.E.R.P. was cannibalized for parts.";
+DERP_NOINTERFACE="No controller connection active. Bring up the interface first.";
+DERP_TAGSET="\cd[DERP]  \cutag set to  \cy%i";
+DERP_ITSBROKEN="\cd[DERP]  \cuIt's broken.";
+DERP_555HELP="\cd[DERP]  \cuUse this command to attach the D.E.R.P. to a wall or switch.";
+DERP_CANTDEPLOY="\cd[DERP]  \cuCan't deploy here.";
+DERP_MODEWAIT="cWAIT";
+DERP_MODELINE="cLINE";
+DERP_MODETURRET="aTURRET";
+DERP_MODEPATROL="gPATROL";
+DERP_MODE="\cd[DERP]  \c%s  \cjmode";
+DERP_GOALSETPLAYER="\cd[DERP]  \cugoal set to  \cyYOUR POSITION";
+DERP_GOALSETTO="\cd[DERP]  \cugoal set to  \cx[%i,%i]";
+DERP_REPORTIN1="\cd[DERP] \cjtag #\cx%i \cjreporting in at [\cx%i\cj,\cx%i\cj] with %s";
+DERP_REPORTIN2="\cy%i\cj bullets left!";
+DERP_REPORTIN3="\crno ammo left!\cj Help!";
+DERP_BADCOMMAND="\cd[DERP]\cj List of available commands:\n             derpt    \cjidle mode  (1)\n             derpa    \cjwatch mode  (2)\n             derpp    \cjwatch360 mode  (3)\n             derpcome \cjpatrol mode (4)\n             derpcome \cjcome to user (5)\n             derpgo   \cjgo to point  (6)\n             derpmv*   \cjadvance in direction (n/s/ne/sw/etc.)  (5)\n             derptag  \cjset tag #   (-x)\n \cu(all of these can be shortened\n\cuwith \"d\" instead of \"derp\")\n\n \cuType \cdderp 123\cu to poll deployed DERPs.\n \cuCurrent tag is \cx%i.";
+DERP_SWITCHING="Switching to next D.E.R.P. in the list.";
+DERP_NODERPS="No D.E.R.P.s deployed. Abort.";
+DERP_NOTFOUND="D.E.R.P. not found. Resetting list.";
+DERP_LASTPOS1="CONNECTION FAILURE, REBOOT REQUIRED!: D.E.R.P. last position given at (";
+DERP_LASTPOS2=",";
+DERP_LASTPOS3=")";
+DERP_IDLEMODE="Idle mode.";
+DERP_WATCHMODE="Watch mode.";
+DERP_WATCH360MODE="Watch360 mode.";
+DERP_PATROLMODE="Patrol mode.";
+DERP_FETCHDEVICES="Fetching nearby devices...";
+DERP_CONNECTIONFAILURE1="CONNECTION FAILURE, REBOOT REQUIRED!: D.E.R.P. last position given at (";
+DERP_CONNECTIONFAILURE2=",";
+DERP_CONNECTIONFAILURE3=")";
+DERP_CONNECTED1="D.E.R.P. connected at (";
+DERP_CONNECTED2=",";
+DERP_CONNECTED3=").";
+DERP_CONNECTIONATTEMPTMADE1="D.E.R.P. connection attempt made by user ";
+DERP_CONNECTIONATTEMPTMADE2=" at (";
+DERP_CONNECTIONATTEMPTMADE3=",";
+DERP_CONNECTIONATTEMPTMADE4=")";
+DERP_REMOTELOGINFAILED="D.E.R.P. remote login attempt failed.";
+
+MAGMANAGER_UITEXT="Mag Manager\n\nNo mags selected";
+MAGMANAGER_CONTROLS1="\cf///\c%s\cf\\\\\\\n\cqFire\cu/\cqAltfire\cu  select mag\n\cqFiremode\cu+\cqF\cu/\cqAF\cu  select type\n\cqReload\cu/\cqUnload\cu  load/unload selected\n\cqFM\cu+\cqR\cu/\cqU\cu  move to/from backpack\n\cqDrop\cu  drop current  \cqFM\cu+\cqDrop\cu  ...lowest\n\cqAlt.Reload\cu bring up lowest\n\cqDrop one\cu drop loose rounds";
+MAGMANAGER_CONTROLS2="y";
+MAGMANAGER_CONTROLS3="uNo mags selected.";
+
+PICKUPMANAGER_UITEXT="\cy\\\\\\\cfPickup Manager\cy///\n\n\n\n\n\n\cj%s";
+PICKUPMANAGER_ONDROP="\n\caOn drop: ";
+PICKUPMANAGER_NOITEMS="No item selected.";
+
+LITEAMP_GOGGLESAT="Goggles at ";
+LITEAMP_CHARGE="% charge and ";
+LITEAMP_INTEGRITY="% integrity.";
+LITEAMP_NOPOWER="No power for lite-amp. Need at least 1 battery on you.";
+
+LADDER_HANG="You hang up a ladder.%s";
+LADDER_HANG_HELPTEXT=" Use the ladder to climb.";
+LADDER_CANTHANG="Can't hang a ladder here.";
+LADDER_CLIMB="You climb the ladder.%s";
+LADDER_CLIMB_HELPTEXT=" Use again or jump to disengage; crouch and jump to pull down the ladder with you.";
+LADDER_DISENGAGE="Ladder disengaged.";
+LADDER_UP="Ladder taken up.";
+LADDER_DOWN="Ladder taken down.";
+
+IED_ONELIVEORDUD="You need at least one live or dud rocket grenade.";
+IED_IED="\cd[IED] \cj";
+IED_DEPLOYED="Deployed with tag ID \cy%i\cj - \cgARMED AND SEEKING!\cj\n\cjUse \cdied 2 \cy%i\cj in the console to \cgde\cjactivate seeking or \cdied 999 \cy%i\cj to detonate immediately.";
+IED_DEPLOYED_IDLE="Deployed with tag ID \cy%i\cj.\n\cjUse \cdied 1 \cy%i\cj in the console to activate seeking or \cdied 999 \cy%i\cj to detonate immediately.";
+IED_SETTAG="Next IED tag set to \cy%i";
+IED_MYPOS="\cu [\cj%i\cu,\cj%i\cu] \cy%i %s";
+IED_ACTIVE="\cgACTIVE";
+IED_PASSIVE="\cupassive";
+IED_VHACK="hacked";
+IED_VDETONATE="\crdetonated";
+IED_VON="\cxactivated";
+IED_VOFF="\cydeactivated";
+IED_RESULT="%i %s %s%s\cj.";
+IED_WITHTAG="with tag \ca%i\cj ";
+IED_SINGULAR="IED";
+IED_PLURAL="IEDs";
+IED_HELPTEXT="%sCommand format:\n\cu ied <option> <tag number> \n\cjOptions:\n 1 = ON\n 2 = OFF\n 999 = DETONATE\n 123 = QUERY\n -n = set tag number\n\cj  tag number on next deployment: \cy%i";
+IED_NODEPLOYED="No IEDs currently deployed.\n";
+IED_S="s";
+
+// Menu Lumps
+HDOPTIONS_TITLE="HIDEOUS DESTRUCTOR OPTIONS";
+HDOPTIONS_LOADOUTEDITOR="Loadout Editor";
+HDOPTIONS_CONFIGURECONTROLS="Configure HD Controls";
+HDOPTIONS_ADDONMENU="Hideous Destructor Addons";
+
+// Server Settings
+HDOPTIONS_SERVERSETTINGS="Server Settings";
+HDOPTIONS_PRESETCASUAL="Server Preset: Casual";
+HDOPTIONS_PRESETNORMAL="Server Preset: Normal";
+HDOPTIONS_PRESETHARDCORE="Server Preset: Hardcore";
+
+HDOPTIONS_ENCUMBRANCEMULTIPLIER="Encumbrance Multiplier";
+HDOPTIONS_DAMAGEMULTIPLIER="Damage Multiplier";
+HDOPTIONS_MAXSTRENGTH="Maximum Strength";
+HDOPTIONS_NOBLEEDING="No bleeding";
+HDOPTIONS_KILLERBARRELS="Killer barrel spawn rate";
+HDOPTIONS_FRAGTICK="Spawn shard every _ tics";
+HDOPTIONS_ARCHVILESPAM="Reduce archvile spam";
+HDOPTIONS_FASTMONSTERS="[Doom] fast monsters";
+
+HDOPTIONS_CAPLIFTSPEEDS="Cap lift speeds to safe levels";
+HDOPTIONS_DIRTYWINDOWS="Add dirty windows to levels";
+HDOPTIONS_MAPDESTRUCTION="Map geometry destruction";
+HDOPTIONS_REPLACEBOTS="Replace bots with riflemen";
+
+HDOPTIONS_DROPONDEATH="Drop everything on death";
+HDOPTIONS_POF="Power of Friendship respawn mode";
+HDOPTIONS_DISINTIGRATOR="Disintegrate without incapacitation";
+HDOPTIONS_INSTAGIB="Instagib mode";
+HDOPTIONS_FLAGPOLE="Flagpole Mode";
+
+HDOPTIONS_RESETSERVERSETTINGS="Reset Server Settings";
+HDOPTIONS_REALLYRESETSERVERSETTINGS="Really clear all server settings?";
+
+// User Settings
+HDOPTIONS_USERSETTINGS="User Settings";
+HDOPTIONS_HEIGHT="Player height";
+HDOPTIONS_STRENGTH="Player strength";
+HDOPTIONS_HELPTEXT="Help text";
+HDOPTIONS_PASSIVESIGHTS="Passive sight view";
+HDOPTIONS_SIGHTBOB="Sights visible when moving";
+HDOPTIONS_CROSSHAIRSCALE="Crosshair scale";
+HDOPTIONS_USEKEYDELAY="HUD use key delay";
+HDOPTIONS_HUDSTYLE="HUD Style";
+HDOPTIONS_USEASFOCUS="Use key doubles as a focus key";
+HDOPTIONS_FOCUSKEYSENSITIVITY="Focus key aiming sensitivity";
+HDOPTIONS_BRACEDSENS="Braced weapon aiming sensitivity";
+HDOPTIONS_NOZOOMLEAN="Don't hold Zoom to lean";
+HDOPTIONS_SLIDECROUCH="No slide/roll from crouch";
+HDOPTIONS_SWAPBARRELS="Swap left/right controls on side-by-side gun";
+HDOPTIONS_MAGPICKUPLIMIT="Mag pickup limit";
+HDOPTIONS_CONSOLIDATION="Passive inventory consolidation";
+HDOPTIONS_RANDOMPITCH="Random monster voice pitch";
+
+HDOPTIONS_RESETUSERSETTINGS="Reset User Settings";
+HDOPTIONS_REALLYRESETUSERSETTINGS="Really clear all user settings?";
+
+HDOPTIONS_BOBSETTINGS="GZDoom Bob Settings";
+
+// User Gear Settings
+HDOPTIONS_USERGEAR="User Personal Gear Settings";
+HDOPTIONS_DERPMODE="DERP mode";
+HDOPTIONS_IEDACTIVE="IEDs start active";
+HDOPTIONS_REFLEXRETICLE="Reflex sight image";
+HDOPTIONS_NVGBRIGHTNESS="Night vision brightness";
+HDOPTIONS_NVGSTYLE="Night vision style";
+
+HDOPTIONS_RESETWEAPONSETTINGS="Reset Weapon Settings";
+HDOPTIONS_REALLYRESETWEAPONSETTINGS="Really clear all weapon settings?";
+
+// Controls Menu
+HDCONTROLS_TITLE="HIDEOUS DESTRUCTOR CONTROLS";
+
+HDCONTROLS_REGULARWEP="Regular Weapon Controls";
+HDCONTROLS_REGTEXT1="Identical to reload, zoom,";
+HDCONTROLS_REGTEXT2="user1 through 4, and weapdrop.";
+HDCONTROLS_ALTRELOAD="Secondary Reload";
+HDCONTROLS_FIREMODE="Weapon Fire Mode";
+HDCONTROLS_MAGMANAGER="Mag Manager";
+HDCONTROLS_UNLOAD="Weapon Unload";
+HDCONTROLS_DROPWEAPON="Drop Weapon";
+
+HDCONTROLS_REGULARMOVEMENT="Regular Movement Controls";
+HDCONTROLS_REGTEXT3="I assume you've already";
+HDCONTROLS_REGTEXT4="bound the directional movements!";
+HDCONTROLS_TOGGLERUN="Toggle Run";
+HDCONTROLS_CROUCH="Crouch";
+HDCONTROLS_JUMP="Jump/Mantle";
+HDCONTROLS_SPRINT="Sprint";
+
+HDCONTROLS_INVENTORYCONTROLS="Inventory Controls";
+HDCONTROLS_NEXTITEM="Next Item";
+HDCONTROLS_PREVIOUSITEM="Previous Item";
+HDCONTROLS_USEITEM="Use Item";
+HDCONTROLS_DROPITEM="Drop Item";
+
+HDCONTROLS_EXCLUSIVECOMMANDS="HD-Exclusive Commands";
+HDCONTROLS_REGTEXT5="Technically optional.";
+HDCONTROLS_TAUNT="Taunt";
+HDCONTROLS_STRIPARMOUR="Strip Armour";
+HDCONTROLS_DROPONE="Drop one ammo";
+HDCONTROLS_DROPUSELESS="Drop useless ammo";
+HDCONTROLS_CYCLESTACK="Cycle same-weapon stack";
+HDCONTROLS_CROUCHSLIDE="Toggle crouch-slide";
+HDCONTROLS_LEANLEFT="Lean left";
+HDCONTROLS_LEANRIGHT="Lean right";
+HDCONTROLS_LEANSTRAFE="Lean (use strafe keys)";
+HDCONTROLS_ROLLFORWARD="Roll forwards";
+HDCONTROLS_ROLLBACKWARD="Roll backwards";
+HDCONTROLS_SETSPAWN="Set team spawn here";
+HDCONTROLS_CLEARSPAWN="Clear team spawn";
+HDCONTROLS_QUERYTEAM="Query all team positions";
+HDCONTROLS_RANGEFINDER="Range Finder";
+HDCONTROLS_PLAYDEAD="Play Dead";
+
+HDCONTROLS_WEPCOMMANDS="Weapon-Specific Shortcuts";
+HDCONTROLS_REGTEXT6="Totally optional.";
+HDCONTROLS_USEPISTOL="Use Pistol";
+HDCONTROLS_USESMG="Use SMG";
+HDCONTROLS_USEGRENADES="Use Grenades";
+HDCONTROLS_USESTIM="Use Stimpack";
+HDCONTROLS_USEMEDIKIT="Use Medikit";
+HDCONTROLS_USEBANDAGES="Use Bandages";
+HDCONTROLS_USEPOTION="Use Potion";
+HDCONTROLS_USEHERP="Use H.E.R.P.";
+HDCONTROLS_USEDERP="Use D.E.R.P.";
+HDCONTROLS_IEDPASSIVE="Set IEDs to Passive";
+HDCONTROLS_IEDACTIVE="Set IEDs to Active";
+HDCONTROLS_DETONATEIED="Detonate IEDs";
+HDCONTROLS_DERPGOTO="DERP goto target";
+HDCONTROLS_DERPSELF="DERP goto self";
+HDCONTROLS_DERPPATROL="Set DERP Patrol";
+HDCONTROLS_DERPWATCH="Set DERP Wait";
+HDCONTROLS_DERPTURRET="Set DERP Turret";
+HDCONTROLS_TOGGLEPT="Toggle DERP Ambush/Turret";
+HDCONTROLS_DERPMOVE_N="DERP move N";
+HDCONTROLS_DERPMOVE_S="DERP move S";
+HDCONTROLS_DERPMOVE_E="DERP move E";
+HDCONTROLS_DERPMOVE_W="DERP move W";
+HDCONTROLS_DERPMOVE_NE="DERP move NE";
+HDCONTROLS_DERPMOVE_SW="DERP move SW";
+HDCONTROLS_DERPMOVE_SE="DERP move SE";
+HDCONTROLS_DERPMOVE_NW="DERP move NW";
+
+// Addon Menu
+HDADDONMENU_TITLE="HIDEOUS DESTRUCTOR ADDON MENUS";
+HDADDONMENU_TEXT1="This is where any loaded addons should place their menu.";
+HDADDONMENU_TEXT2="----- Menus -----";
+
+// Option Values
+
+HDOPTIONVALUE_HE="He";
+HDOPTIONVALUE_SHE="She";
+HDOPTIONVALUE_THEY="They";
+HDOPTIONVALUE_IT="It";
+
+HDOPTIONVALUE_SCREENBLOCKS="Use screenblocks";
+HDOPTIONVALUE_MUGSHOT="Mugshot";
+HDOPTIONVALUE_NOMUGSHOT="No mugshot";
+
+HDOPTIONVALUE_DOT="Dot";
+HDOPTIONVALUE_BIGDOT="Big dot";
+HDOPTIONVALUE_CROSSHAIR="Crosshair";
+HDOPTIONVALUE_TOPCROSSHAIR="Topless crosshair";
+HDOPTIONVALUE_SMALLCROSSHAIR="Small crosshair";
+HDOPTIONVALUE_THREEDOTS="Three dots";
+HDOPTIONVALUE_TINYCIRCLE="Tiny circle";
+HDOPTIONVALUE_SMALLCIRCLE="Small circle";
+
+HDOPTIONVALUE_AUTOAIM_NEVER="Never";
+HDOPTIONVALUE_AUTOAIM_VERYLOW="Very Low";
+HDOPTIONVALUE_AUTOAIM_LOW="Low";
+HDOPTIONVALUE_AUTOAIM_MEDIUM="Medium";
+HDOPTIONVALUE_AUTOAIM_HIGH="High";
+HDOPTIONVALUE_AUTOAIM_VERYHIGH="Very High";
+HDOPTIONVALUE_AUTOAIM_ALWAYS="Always";
+
+HDOPTIONVALUE_HIDEOUSGREEN="Hideous Green";
+HDOPTIONVALUE_HIDEOUSRED="Hideous Red";
+HDOPTIONVALUE_ANALOGGREEN="Analog Green";
+HDOPTIONVALUE_ANALOGAMBER="Analog Amber";
+HDOPTIONVALUE_DIGITALGREEN="Digital Green";
+HDOPTIONVALUE_DIGITALAMBER="Digital Amber";
+HDOPTIONVALUE_MODERNGREEN="Modern Green";
+HDOPTIONVALUE_TRUECOLOR="Truecolor";
+
+HDOPTIONVALUE_DOORBUSTER_ALLOWALL="Allow all";
+HDOPTIONVALUE_DOORBUSTER_ALLOWNONE="Allow none";
+HDOPTIONVALUE_DOORBUSTER_DEDICATED="Dedicated only";
+
+HDOPTIONVALUE_DERPMODE_IDLE="Idle";
+HDOPTIONVALUE_DERPMODE_WATCH="Watch";
+HDOPTIONVALUE_DERPMODE_TURRET="Turret";
+HDOPTIONVALUE_DERPMODE_PATROL="Patrol";
+
+HDOPTIONVALUE_INERTIA_NORMAL="Normal";
+HDOPTIONVALUE_INERTIA_DISABLEALL="All disabled";
+HDOPTIONVALUE_INERTIA_ACCELONLY="Accelerate Only";
+
+HDOPTIONVALUE_NOSCOPE_SCOPESIGHT="Scope+sights";
+HDOPTIONVALUE_NOSCOPE_SIGHTSONLY="Sights Only";
+HDOPTIONVALUE_NOSCOPE_NOTHING="Nothing";
+
+HDOPTIONVALUE_NOSLIDE_BOTH="Boths slides and rolls";
+HDOPTIONVALUE_NOSLIDE_NOSLIDE="No slides";
+HDOPTIONVALUE_NOSLIDE_NOROLLS="No rolls";
+HDOPTIONVALUE_NOSLIDE_NEITHER="Nothing";
+
+// Loadout Menu
+LOADOUTMENU_EDITING="Now editing loadout no. ";
+LOADOUTMENU_SAVE="\cjENTER or Ctrl+S to save, or ESC to abort.";
+LOADOUTMENU_SETTONUM="\cxLoadout set to number ";
+LOADOUTMENU_RESETLOADOUT="\cyRESET TO DEFAULT.";
+LOADOUTMENU_CUTTOBOARD="\caCut to clipboard.";
+LOADOUTMENU_COPYFROMBOARD="\cdCopied to clipboard.";
+LOADOUTMENU_PASTEFROMBOARD="\cxPasted from clipboard.";
+LOADOUTMENU_SAVEFIRST="\ca- Save your loadout first!";
+LOADOUTMENU_LOADOUT="Loadout ";
+LOADOUTMENU_LOADSAVEDTO="\cy- SAVED TO LOADOUT NO. ";
+LOADOUTMENU_DOOMGUY="Pistol and fifty bullets.";
+LOADOUTMENU_INSURGENT="It's a surprise...";
+LOADOUTMENU_NATURIST="Because showing up is half the battle.";
+LOADOUTMENU_INBACKPACK="\n\nIN BACKPACK:";
+LOADOUTMENU_NOBACKPACK="\n  <nothing>";
+
+LOADOUTMENU_CTRLF="\n\cu  Ctrl+F ";
+LOADOUTMENU_PREVIEW="preview";
+LOADOUTMENU_REFIDLIST="refID list";
+LOADOUTMENU_PAGEUPDOWN="   PgUp/PgDn scroll\n  Ctrl+Home/End Start/End of list\cj\n";
+
+LOADOUTMENU_CODEREFERENCELIST="\cnC O D E   R E F E R E N C E   L I S T            ";
+LOADOUTMENU_LOADOUTPREVIEW="\ceL O A D O U T   P R E V I E W                    ";
+
+LOADOUTMENU_CONFIGURELOADOUT="Configure Loadout";
+LOADOUTMENU_CONTROLS="\cdENTER\cu save   \cdESC\cu clear changes   \cdCtrl+R\cu reset   \cdCtrl+H\cu ";
+LOADOUTMENU_SYNTAXHELP=" syntax help";
+LOADOUTMENU_HIDE="hide";
+LOADOUTMENU_VIEW="view";
+LOADOUTMENU_SYNTAX="\cgSyntax:   \cazzzz#aaaa:xxx n, yyy n, bak yyy n. yyy n\n\cazzzz\cu preview picture (optional)   \caaaaa\cu name (optional)\n\caxxx\cu starting weapon   \cayyy\cu anything else\n\can\cu number given\cu (optional, default 1)\n\cabak\cu begin backpack settings\n\camap\cu for map   \cakey\cu for keys (bitflag BYR)\n\n";
+LOADOUTMENU_NOWEDITING="Now editing loadout no. ";
+LOADOUTMENU_LOADOUTNO="Loadout no.  ";
+
+MENU_NEWGAME="New Game: Select Loadout";
+MENU_NEWGAME_CONTROLS="\cuUp/Down select, Enter confirm, R random, Ctrl+R lucky";
+MENU_WEAPONSTRING_NOTHING="<nothing>";
+
+//Default Weapons Help Text
+WPHFIRE = "Fire";
+WPHAltfire = "Alt.Fire";
+WPHReload = "Reload";
+WPHZoom = "Zoom";
+WPHArel = "Alt.Reload";
+WPHFmode = "Fire Mode";
+WPHUser3 = "User3";
+WPHUnload = "Unload";
+WPHSpeed = "Speed";
+WPHMlook = "Mouse look";
+WPHUse = "Use";
+WPHDrop = "Drop";
+WPHDropO = "Drop one";
+WPHSht = "  Shoot\n";
+WPHRel = "  Reload\n";
+WPHUnl = "  Unload\n";
+WPHMMan = "  Mag Manager\n";
+WPHUSEONY = "  Use on yourself\n";
+WPHUSEONS = "  Use on someone else";
+
+//BFG Help Text
+BFGWH_FIRE = "  Shoot/Charge\n";
+BFGWH_ALTFIRE = "  Toggle harness\n";
+BFGWH_RELOAD = "  Abort charge/Reload battery\n";
+BFGWH_ALTRELOAD = "  Reload depleted battery\n";
+BFGWH_USEPUNL = "  Charge unattended";
+
+//Boss Help Text
+BOSWH_ALTFIRE = "  Work bolt\n";
+BOSWH_RELOAD = "  Reload rounds/clip\n";
+BOSWH_ZPFMOD = "  Zoom\n";
+BOSWH_ZPUSE = "  Bullet drop\n";
+BOSWH_ZPDRON = "  Force drop non-recast\n";
+BOSWH_ZPALTRELOAD = "  Force load recast\n";
+BOSWH_AFIREPUNL = "  Unload chamber/Clean rifle\n";
+
+//ChainSaw Help Text
+SAWWPH_CUT = "  Cut\n";
+
+//Fist Help Text
+FISTWH_FIRE = "  Punch\n";
+FISTWH_ALTFIRE = "  Lunge\n";
+FISTWH_RELOAD = "  Distracting strike\n";
+FISTWH_FMODE = "  Grab/Drag\n";
+FISTWH_UNLOAD = "  Distracting projectile\n";
+FISTWH_ZPSPED = "  Kick down door\n";
+FISTWH_ZPDROP = "  Drop misc. items\n";
+
+//Grenades Help Text
+GRENWH_FIRE1 = "  Wind up, release to throw\n(\cxSTOP READING AND DO THIS";
+GRENWH_FIRE2 = "  Pull pin/wind up (release to throw)\n";
+GRENWH_ALTFIRE = "  Pull pin, again to drop spoon\n";
+GRENWH_RELOAD = "  Abort/Replace pin\n";
+GRENWH_ZOOM = "  Start planting tripwire traps";
+
+TRPWH_FIRE = "  Place ";
+TRPWH_GRENADE = "grenade";
+TRPWH_ENDOFSTRING = "end of string";
+TRPWH_ALTFIRE = "  Abort\n";
+
+//Rocket Launcher And Blooper Help Text
+RLWH_ROCK = "Rocket";
+RLWH_GREN = "Grenade";
+RLWH_MODE = " mode\n";
+RLWH_OR = " or ";
+RLWH_REMOVHEAT = "  Remove H.E.A.T. round\n";
+RLWH_LOAD = "  Load H.E.A.T. round\n";
+RLWH_AIRBURST = "  Airburst\n";
+
+BLOPWH_ALTFIRE = "  Reset airburst\n";
+BLOPWH_AIRBURST = "  Airburst\n";
+
+//Liberator Help Text
+ARELWH_FIRE = "  Assemble rounds\n";
+ARELWH_SAMELOL = "  same";
+LIBWH_ALTFIRE1 = "  Rifle mode\n";
+LIBWH_ALTFIRE2 = "  GL mode\n";
+LIBWH_RELOAD = "  Reload mag\n";
+LIBWH_UPRELOAD = "  Reload chamber\n";
+LIBWH_ALTRELOAD = "  Reload GL\n";
+LIBWH_FMODPUD = "  Airburst\n";
+LIBWH_FMODE = "  Semi/Auto\n";
+LIBWH_ZPFMOD = "  Zoom\n";
+LIBWH_UNLOAD = "  Unload ";
+LIBWH_GL = "GL\n";
+LIBWH_MAG = "magazine\n";
+UPUNLOAD = "  Assemble rounds";
+
+//ZM66 Help Text
+ZMWH_ALTFIRE1 = "  Rifle mode\n";
+ZMWH_ALTFIRE2 = "  GL mode\n";
+ZMWH_RELOAD = "  Reload mag\n";
+ZMWH_UPRELOAD = "  Reload chamber\n";
+ZMWH_ALTRELOAD = "  Reload GL\n";
+ZMWH_FMODPUD = "  Airburst\n";
+ZMWH_ZPFMOD = "  Zoom\n";
+ZMWH_UNLOAD = "  Unload ";
+ZMWH_GL = "GL\n";
+ZMWH_MAG = "magazine\n";
+ZMWH_FMODE = "  Semi/Auto/Burst\n";
+
+//Pistol Help Text
+PISWH_FMODE = "  Semi/Auto\n";
+PISWH_ALTRELOAD = "  Quick-Swap (if available)\n";
+PISWH_RELOAD = "  Reload mag\n";
+PISWH_UPRELOAD = "  Reload chamber\n";
+
+//Revolver Help Text
+REVCWH_FIRE = " Close cylinder\n";
+REVCWH_ALTFIRE = " Cycle cylinder \(Hold ";
+REVCWH_ALTZOOM = " to reverse\)\n";
+REVCWH_UNLOAD = " Hit extractor \(double-tap to dump live rounds\)\n";
+REVCWH_RELOAD = " Load round \(Hold ";
+REVCWH_FMODPRELOAD = " to force using 9mm\)\n";
+REVWH_ALTFIRE = " Pull back hammer\n";
+REVWH_ARELOADPFMOD = "  Quick-Swap (if available)\n";
+REVWH_RELOAD = " Open cylinder\n";
+
+//Hunter Help Text
+SHOOT_CH = "  Shoot (Choke: ";
+PUMP = "  Pump\n";
+SHTG_REL1 = "  Reload (side saddles first)\n";
+SHTG_REL2 = "  Reload (pockets only)\n";
+SHTG_FMODE = "  Pump/Semi";
+SHTG_SIDE = "  Load side saddles\n";
+SHTG_STEAL = "  Steal ammo from Slayer\n";
+
+//Slayer Help Text
+SLAWH_FIRE = "  Shoot Left (choke: ";
+SLAWH_ALTFIRE = "  Shoot Right (choke: ";
+SLAWH_RELOAD = "  Reload (side saddles first)\n";
+SLAWH_ALTRELOAD = "  Reload (pockets only)\n";
+SLAWH_FMODE = "  Hold to force double shot\n";
+SLAWH_FMODPRELOAD = "  Load side saddles\n";
+SLAWH_UPUNL = "  Steal ammo from Hunter\n";
+
+//SMG Help Text
+SMGWH_FIRE = "  Reload mag\n";
+SMGWH_UPRELOAD = "  Reload chamber\n";
+SMGWH_FMODE = "  Semi/Burst/Auto\n";
+
+//ThunderBooster Help Text
+THBWH_SWITCH = "  Switch to ";
+THBWH_DETONATOR = "detonator";
+THBWH_SCATTERSHOT = "scattershot";
+THBWH_MODE = " mode\n";
+THBWH_ALTRELOAD = "  Range finder";
+
+//Vulcanette Help Text
+VULWH_RELOAD = "  Reload mags\n";
+VULWH_ALTRELOAD = "  Reload battery\n";
+VULWH_SWITCH = "  Switch to ";
+VULWH_RPM = " RPM\n";
+VULWH_ZPFMODPUD = "  Zoom\n";
+VULWH_ZPUNL = "  Repair\n";
+VULWH_OR = "  or  ";
+VULWH_UNLBAT = "  Unload battery\n";
+
+//Other strings in weapon.zs
+WEPWH_LOWENCU = "Playing low encumbrance mode. Drop your current ";
+WEPWH_LOWFIRST = " first.";
+WEPWH_NUMBER = " number ";
+WEPWH_THISYOUR = "\caThis is your ";
+NWWH_KICK = "  Try to kick down a door\n";
+WEP_TOOHEAVY = "You can't even move to put away your weapon. Throw something out!";
+
+//BackPack Help Text
+BPWH_PNI = "  Previous/Next item\n";
+BPWH_ZPF = "  Cycle mag\n";
+BPWH_FMODPUD = "  Scroll through items\n";
+BPWH_RELOAD = "  Insert\n";
+BPWH_UNLOAD = "  Remove\n";
+BPWH_DROPO = "  Remove and drop\n";
+BPWH_ALTRELOAD = "  Dump\n";
+
+//Second Blood Help Text
+SBSWH_FIRE = "  Attach";
+SBSWH_ALTRELOAD = "  Remove";
+
+//DERP (including controller) Help Text
+DERPWH_REPAIR = "  Repair\n";
+DERPWH_FIRE = "  Deploy\n";
+DERPWH_ALTFIRE = "  Cycle modes\n";
+DERPWH_FMODPUD = "  Set BotID\n";
+
+DERPCWH_FMODE = "  Hold to pilot\n";
+DERPCWH_ALTFIRE = "  Forwards\n";
+DERPCWH_USE = "  Backwards\n";
+DERPCWH_RELOAD = "  Cycle through modes\n";
+DERPCWH_UNLOAD = "  Jump to Passive mode\n";
+DERPCWH_DROP = "  Next D.E.R.P.";
+
+//HERP (including controller) Help Text
+HERPWH_RELOAD = "  Reload mag\n";
+HERPWH_ALTRELOAD = "  Reload battery\n";
+HERPWH_UNLOAD = "  Unload mag\n";
+HERPWH_USEPALTRELOAD = "  Unload battery\n";
+HERPWH_USEPUNLOAD = "  Unload partial mag\n";
+HERPWH_ZOOM = "  Manual firing";
+
+HERPCWH_FMODE = "  Hold to pilot and:\n";
+HERPCWH_ALTRELOAD = "  Set home angle\n";
+HERPCWH_ALTFIRE1 = "  Turn ";
+HERPCWH_ALTFIRE2 = "Off";
+HERPCWH_ALTFIRE3 = "On";
+HERPCWH_ZOOM1 = "Enable";
+HERPCWH_ZOOM2 = "Disable";
+HERPCWH_ZOOM3 = " Horizontal Scan\n";
+HERPCWH_RELOAD = "  Disconnect manual mode\n";
+HERPCWH_DROP = "  Next H.E.R.P.";
+HERPCWH_RELOAD2 = "  Connect manual mode\n";
+HERP_ERROR = "ERROR";
+
+//JetPack Help Text
+JPWH_FIRE = "  Ascend\n";
+JPWH_ALTFIRE = "  Forwards\n";
+JPWH_FMODE = "  On/Off\n";
+JPVELOCITY = "velocity:  ";
+JPVELOCITYMS = " m/s";
+
+//Mag Manager Help Text
+MAGMWH_FIRE = "  Previous/Next mag/clip\n";
+MAGMWH_ALTRELOAD = "  Select lowest unselected\n";
+MAGMWH_RELOAD = "  Insert/Remove round\n";
+MAGMWH_FMODPFIRE = "  Previous/Next item type\n";
+MAGMWH_FMODPRELOAD = "  Insert/Remove from backpack\n";
+MAGMWH_FMODPDROP = "  Drop lowest mag\n";
+MAGMWH_USER3 = "  Generic item manager\n";
+
+//PickUp Manager Help Text
+PIKMWH_FIRE = "  Previous/Next item\n";
+PIKMWH_FMODPUD = "  Cycle items\n";
+PIKMWH_DROP = "  Drop item\n";
+PIKMWH_ZPUD = "  Adjust amount per drop\n";
+PIKMWH_USER3 = "  Mag manager\n";
+
+//Medikitter Help Text
+SFAWH_RELOAD = "  Take off armour\n";
+SFAWH_WPRESS = "\n  ...while pressing:\n";
+SFAWH_NOTHING = "  <\cunothing";
+SFAWH_FIRE = ">  Treat wounds\n";
+SFAWH_ZOOM = "  Treat burns\n";
+SFAWH_FMODE = "  Run diagnostic";
+
+//Potion Help Text
+HEALWH_FIRE = "  Drink\n";
+HEALWH_USE = "(item)  Cycle";
+
+//Bandage Help Text
+BANDWH_ALTRELOAD = "  Remove blood feeder";
+BANDWH_IFANY = "(if any)";
+
+//Crawling Bandage Help Text
+CRAWWH_FIRE = "  Try to stop the bleeding\n";
+CRAWWH_RELOAD = "  Take off armour\n";
+CRAWWH_ALTFIRE = "  Use the item in hand\n";
+CRAWWH_FMODE = "  Fumble for something else\n";
+CRAWWH_JUMP = "Jump";
+CRAWWH_GETUP = "  Get up\n";
+
+
+//Tips
+TIP_TIP = "\crTIP: \cu";
+//TIP_TEST = "Is that shit works?";
+TIP_TIP1 = "Read the manual!\n(open the pk7 with 7Zip and look for \cdhd_manual.md\cu)";
+TIP_TIP2 = "Hold \cdUse\cu to check what options are available for a given weapon.";
+TIP_TIP3 = "Make sure you bind keys for \cdall weapon \"User\" buttons\cu\n\cdDrop Weapon\cu, \cdZoom\cu and \cdReload\cu!";
+TIP_TIP4 = "Check the menu for additional keybinds unique to HD!";
+TIP_TIP5 = "To stop bleeding, hit \cd9\cu or use the \cdmedikit\cu.\nThen, if needed, take off your armour\nby hitting \cdReload\cu.";
+TIP_TIP6 = "Hold \cdJump\cu and move forwards into a ledge to try to clamber over it.";
+TIP_TIP7 = "Hit \cdUser3\cu to access the magazine manager on most weapons.";
+TIP_TIP8 = "Hit \cdUser4\cu to unload most weapons.";
+TIP_TIP9 = "If you are carrying too much useless ammo,\nhit the \cdPurge Useless Ammo\cu key\nor use the \cdhd_purge\cu command.";
+TIP_TIP10 = "\cvTr\caan\cjs ri\cagh\cvts\cu are human rights, the same way guns are weapons.\nIf you're having trouble with this, one stopgap measure\nis to think of this in the same way guns are loaded.";
+TIP_TIP11 = "Hit \cdUse\cu on a ladder to start climbing, and again or \cdJump\cu to dismount.\nHit \cdJump\cu while \cdcrouching\cu to take down the ladder.";
+
+TIP_TIP12 = "Your movement and turning affect your punches and grenades.\nGo to the range and practice!";
+TIP_TIP13 = "Use stimpacks to slow down bleeding.";
+
+TIP_TIP14 = "If the sight picture is getting in your way when you're on the move,\ntry changing the \cdhd_noscope\cu and \cdhd_sightbob\cu settings to taste.";
+TIP_TIP15 = "Holding \cdZoom\cu will greatly stabilize your aim,\nand implicitly brace your weapon\nagainst nearby map geometry.";
+TIP_TIP16 = "Hold \cdZoom\cu when firing an airburst rocket or grenade\nto prevent the airburst value from resetting.";
+TIP_TIP17 = "Hit the \cdDrop One\cu key or use the \cdhd_dropone\cu command\nto drop a single unit of each ammo type used by your current weapon.";
+TIP_TIP18 = "If you don't want the diving action when you hit \cdCrouch\cu while running,\nset \cdhd_noslide\cu to 1 or use the menu.";
+TIP_TIP19 = "If you don't want \cdZoom\cu to make you lean,\nset \cdhd_nozoomlean\cu to true.";
+
+TIP_TIP20 = "Set \cdfraglimit\cu to 100+ to enable HD's elimination mode.\nIn co-op, a positive fraglimit under 100\nalso serves as a lives limit.";
+TIP_TIP21 = "Turn on \cdhd_pof\cu in co-op or teamplay for a one-life mode where\nyou can only be raised in the presence of all living teammates.";
+TIP_TIP22 = "Turn on \cdhd_flagpole\cu in multiplayer to create an objective!\n(Move AWAY from the flagpole to program the flag.)";
+TIP_TIP23 = "Turn on \cdhd_nobots\cu to cause the bots to be replaced by HD riflemen.";
+
+TIP_TIP24 = "To remote activate a switch or door,\ntype \cdderp 555\cu to stick a D.E.R.P. on to it,\nthen \cdderp 556\cu to make it flick the switch.";
+TIP_TIP25 = "Hold \cdZoom\cu and/or \cdUse\cu when you use the goggles to set the amplitude.\nBoth together decrements, \cdUse\cu alone increments.\n\cdZoom\cu alone toggles red/green mode.";
+
+TIP_TIP26 = "Zombies never surrender!\nIf a downed monster is still twitching,\nthey may be able to recover and attack again.";
+
+TIP_TIP27 = "If a map contains a mandatory drop that is harmless\nin vanilla but absolutely cannot be survived in HD,\nit is socially acceptable to cheat past it with \cdiddqd\cu or \cdfly\cu.";
+
+//Oh, nice MGS reference. Ha-ha ha-ha ha...
+BOSS_CLEANS = "Looking inside that chamber...";
+BOSS_FINLINE = "You %s %s from the %s. ";
+
+BOSS_CLEAN1 = "There doesn't seem to be much. ";
+BOSS_CLEAN2 = "What the FUCK. ";
+BOSS_CLEAN3 = "About time - this gun is barely functional. ";
+BOSS_CLEAN4 = "This is starting to gum up badly. ";
+BOSS_CLEAN5 = "It can use some cleaning. ";
+//"What the FUCK. "
+BOSS_EXTRACT = "extract";
+BOSS_SCRAPEOFF = "scrape off";
+BOSS_WIPEAWAY = "wipe away";
+BOSS_CAREREMOVE = "{care|skil|force}fully remove";
+BOSS_DUMPOUT = "dump out";
+BOSS_PICKOUT = "pick out";
+BOSS_BLOWOFF = "blow off";
+BOSS_SHAKEOUT = "shake out";
+BOSS_SCRUBOFF = "scrub off";
+BOSS_FISH = "fish out";
+//
+BOSS_SOMEDUST = "some dust";
+BOSS_ALODUST = "a lot of dust";
+BOSS_ABOPOWDER = "a bit of powder residue";
+BOSS_DAOPOWDER = "a disturbing amount of powder residue";
+BOSS_SEXGREASE = "some excess grease";
+BOSS_ALOSOOT = "a layer of soot";
+BOSS_SOMEIRON = "some iron filings";
+BOSS_HAIR = "a bit of hair";
+BOSS_EYELASH = "an eyelash";
+BOSS_BLOOD = "a patch of dried blood";
+BOSS_RUST = "a bit of rust";
+BOSS_CRUMB = "a crumb";
+BOSS_DEADSOME = "a dead {insect|spider|ant|wasp}";
+BOSS_ASHES = "ashes";
+BOSS_SKIN = "some loose bits of skin";
+BOSS_FLUID = "a sticky fluid of some sort";
+BOSS_WOWSOME = "wow some fucking *gunk*";
+BOSS_BOOGER = "a booger";
+BOSS_FECAL = "trace fecal matter";
+BOSS_BULLETSIMPACT = "yet even more of that anonymous grey debris that all those bullet impacts make";
+BOSS_JAM = "a dollop of {straw|blue|rasp}berry jam";
+BOSS_HUSK = "the dried husk of a {pinto|fava|mung} bean with residual hog components";
+BOSS_SFLESH = "a tiny cancerous nodule of Second Flesh";
+BOSS_CRYSTAL = "some crystalline buildup of congealed Frag";
+BOSS_SPACEANT = "a nesting queen space ant";
+BOSS_TRANSISTOR = "a single modern-day transistor";
+BOSS_TINBOSS = "a tiny Boss rifle (also jammed)";
+BOSS_FILM = "a colourless film of darkness made visible";
+//
+BOSS_BOLTCAR = "bolt carrier";
+BOSS_MAINEXTRACTOR = "main extractor";
+BOSS_AUXEXTRACTOR = "auxiliary extractor";
+BOSS_CAMPIN = "cam pin";
+BOSS_BOLTHEAD = "bolt head";
+BOSS_STRIKER = "striker";
+BOSS_SPRING = "firing pin spring";
+BOSS_EJECTSLOT = "ejector slot";
+BOSS_STRIKERSPRING = "striker spring";
+BOSS_EJSPRING = "ejector spring";
+//
+BOSS_CLENF1 = "You barely scrape the surface of this all-encrusting abomination.";
+BOSS_CLENF2 = "The gun will need a lot more work than this before it can be deployed again.";
+BOSS_CLENF3 = "You might get a few shots out of it now.";
+BOSS_CLENF4 = "It's better, but still not good.";
+BOSS_CLENF5 = "Good to go.";
+
+//426 Mag Messages
+426MAGMSG = "Reloading a 4.26 UAC Standard magazine into another firearm without authorization is a breach of the Volt End User License Agreement.";
+4MILNOTE = " NOTE:  %s";
+426MAGREALLY = "%s\nDo you really want to do that?";
+//ZM66 Mag reloading messages
+ZM426MAGMSG = "Reloading a 4.26 UAC Standard magazine into another firearm\nwithout authorization is a breach of the\nVolt End User License Agreement.";//Original one don't fit in screen
+ZMRELERROR = "\cg[ERR (code ";
+ZMNOCARRIER = ") no carrier]";
+
+TAG_TRIPWIRES = "Tripwires";
+TRIPWIRETXT = "\cp\--- \cqTRIPWIRES \cp---\c-\n\n\nHit fire to set one end of the line,\n\nthen hit fire again to plant the grenade.\nby human hands.\n\nMove carefully.";
+TRIPWIRETXT1 = "You need to stick the %s on to something stable.";
+TRIPWIRETXT2 = "wire";
+TRIPWIRETXT3 = "grenade";
+TRIPWIRETXT4 = "Wire end secured. Now to set the grenade...";
+TRIPWIRETXT5 = "Grenade secured! Now be very, very careful...";
+TRIPWIRETXT6 = "Welp, there goes that one. Try again?";
+TRIPWIRESABORT = "Setup aborted.";
+
+HERP_AUTO = "\cxAUTO";
+HERP_RELOAD = "press \cdreload\cu for manual";
+HERP_OFF = "\cuOFF";
+HERP_ALTFIRE = "press \cdaltfire\cu to turn on";
+HERP_MANUAL = "\cyMANUAL";
+HERP_FMODE = "hold \cdfiremode\cu to steer";
+HERP_NOTFOUND = "H.E.R.P. not found. Resetting list.";
+HERP_HOMEANGLE = "Home angle set.";
+HERP_FETCHINNG = "Fetching nearby devices...";
+HERP_CONNECT = "H.E.R.P. connected.";
+HERP_CONNERROR = "Connection error. H.E.R.P. not found or credentials expired. Please email vendor technical support for assistance.";
+HERP_REMOTEFAILED = "H.E.R.P. remote login attempt failed.";
+HERP_DEPLOYED = "Deployed.";
+
+WOUNDFIX_TAKEOFF1 = "Take off your ";
+WOUNDFIX_TAKEOFF2 = " first!\n\n(\cdhd_strip\c- in the console\nor hit \cdreload\c-)";
+
+//MISC
+355ROUND = ".355 round";
+SOLDIERKITLOADOUT = "elit soldier kit";
+INSURGENTLOADOUT = "Insurgent Loadout";
+EAST = "E";
+WEST = "W";
+SOUTH = "S";
+NORTH = "N";
+HD_MAGlLIMIT = "hd_maglimit ";
+FIST_DRAG = "dragging ";
+FIST_CORPSE = "corpse";
+FIST_ITEM = "item";
+FIST_OBJECT = "object";
+PICK_REDKEY = "\crRED\c- local area clearance code downloaded.";
+PICK_BLUEKEY = "\cnBLUE\c- local area clearance code downloaded.";
+PICK_YELLOWKEY = "\cfYELLOW\c- local area clearance code downloaded.";
+PICK_REDSKULL = "\crRED\c-, the way of the blood shed for you in vain.";
+PICK_BLUESKULL = "\cnBLUE\c-, the way of the heaven forever lost to you.";
+PICK_YELLOWSKULL = "\cfYELLOW\c-, the way of the gold that has lured all mankind to death.";
+DEBRIS = "You find some random punched-wall debris in your pockets to flick it at the offending thing.";
+DEBRIS2 = "For want of random wall-punched debris or a natural mucus system, you scrape some tainted lubricant off of some of your unseen parts and wad it into a filthy, flickable lump.";
+DEBRIS3 = "For want of random wall-punched debris in your pockets, you pick your nose to flick it at the offending thing.";
+SLAYERUNAVAILABLE = "Slayer unavailable, have a Hunter instead.";
+WORNREMOVING = "Removing ";
+WORNFIRST = " first.";
+
+DORBUSTLOG1 = "Find a wall to stick the DoorBuster on.";
+DORBUSTLOG2 = "Can't deploy here.";
+DORBUSTLOG3 = "DoorBuster planted with tag \cy%i";
+DORBUSTLOG4 = "\cj. Use \cddb 999 \cy%i\cj to detonate.";
+DORBUSTLOG5 = "DoorBuster tag set to  \cy%i";
+DORBUSTLOG6 = "DoorBuster Command format:\n\cu db <option> <tag number> \n\cjOptions:\n 999 = DETONATE\n 123 = QUERY\n -n = set tag number\n\cj  tag number on next deployment: \cy%i";
+DORBUSTLOG7 = "DoorBuster detonated at [%i,%i].";
+DORBUSTLOG8 = "DoorBuster with tag \cy%i at [%i,%i].";
+
+
+Necromancer1 = "My work here is done.";
+Necromancer2 = "There is nothing here.";
+Necromancer3 = "I see no further need here for my intervention.";
+Necromancer4 = "Goodbye.";
+Necromancer5 = "I ascend.";
+Necromancer6 = "Nothing to be done.";
+Necromancer7 = "Logging off.";
+Necromancer8 = "I descend.";
+Necromancer9 = "Good luck finding the exit.";
+NecromancerA = "So long, and thanks for all the fish.";
+NecromancerB = "Change da world. My final message. Goodbye.";
+NecromancerC = "Now where did I leave that cheesecake...";
+
+PICKUP_SHIELDCORE = "Picked up a shield core.";
+

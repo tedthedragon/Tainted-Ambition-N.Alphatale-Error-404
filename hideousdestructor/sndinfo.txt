@@ -1,0 +1,500 @@
+//HD's main SNDINFO file
+
+
+//monsters
+grunt/bleedout1  dspodth1
+grunt/bleedout2  dspodth2
+$random grunt/bleedout {grunt/bleedout1 grunt/bleedout2}
+
+shellshade/sight   dsposit
+shellshade/active  dsposact
+shellshade/pain    dsplpain
+shellshade/death   dspldeth
+
+freshgrunt/sight   dsposit
+freshgrunt/active  dsposact
+freshgrunt/pain    dspopain
+freshgrunt/death1  dspodth1
+freshgrunt/death2  dspodth2
+freshgrunt/death3  dspodth3
+$random freshgrunt/death {freshgrunt/death1 freshgrunt/death2 freshgrunt/death3}
+
+nazi/punched  dsding
+
+humanoid/step        dsknock  $volume humanoid/step 0.4 $pitchset humanoid/step 0.6
+humanoid/squishstep  dschlp  $volume humanoid/squishstep 0.1 $pitchset humanoid/squishstep 1.6
+
+serpentipede/step  dsslp  $volume serpentipede/step 0.04 $pitchset serpentipede/step 1.9
+imp/step           dsrifclk  $volume imp/step 0.1 $pitchset imp/step 1.6
+
+babuin/sight    dssgtsit
+babuin/active   dsdmact
+babuin/pain     dsdmpain
+babuin/bite     dssgtatk
+babuin/melee    dsclaw
+babuin/attack   dsfirsht
+babuin/shotx    dsfirxpl
+babuin/death    dssgtdth
+babuin/step  dspocket  $volume babuin/step 0.4 $pitchset babuin/step 1.4
+babuin/wormstep  dsslp  $volume babuin/wormstep 0.1 $pitchset babuin/wormstep 0.4
+
+hatchling/shriek  dssklatk
+hatchling/active  dsflame   $pitchset hatchling/active 1.6
+hatchling/death   dsfirxpl
+$alias hatchling/zap  misc/zap
+$alias hatchling/zap2 misc/zap2
+$alias hatchling/zap3 misc/zap3
+
+putto/shotf   dsfirsht
+putto/shotx   dsfirxpl
+putto/spit    dsbospit  $volume putto/spit 0.2
+putto/sight   dsboscub
+putto/active  dsdmact
+putto/pain    dsdmpain
+putto/death   dsbarexp
+
+yokai/sight   dsboscub
+
+ghost/active   dsboscub  $limit ghost/active 0  $pitchset ghost/active 0.7
+ghost/attack   dsbrifle  $limit ghost/attack 0  $pitchset ghost/attack 0.4
+ghost/useitem  dsgetpow
+
+caco/ballhum        dsplsidl  $limit caco/ballhum 0
+caco/ballcrack      dsrifclk
+caco/bigexplode     dsbarexp
+caco/bigexplodefar  dsriffar
+caco/bigexplodefar2 dsshtfar
+caco/ballecho       dsbfgfar
+caco/bigcrack       dsthubm
+caco/bigshot        dsdsdshtgn  //dsbarexp in d1
+caco/charge         dscacsit
+$alias caco/arczap misc/arczap
+$alias caco/zap misc/zap
+$alias caco/zap2 misc/zap2
+$alias caco/zap3 misc/zap3
+
+skull/idlescream    dssklatk
+skull/activescream  dssklatk
+
+boner/drone  dsfwoosh  $limit boner/drone 0  $pitchset boner/drone 1.8 $volume boner/drone 0.2
+
+baron/ballhum    dsplsidl
+baron/bigballx   dsbarexp
+baron/bigballf   dssklatk
+baron/attack     dsfirsht
+baron/shotx      dsfirxpl
+baron/step      dsknock  $volume baron/step 1. $pitchset baron/step 0.5  //id
+baron/clawstep  dsrifclk  $volume baron/clawstep 0.15 $pitchset baron/clawstep 1.6
+
+cyber/ballhum  dsplsidl  $limit cyber/ballhum 0
+cyber/walk     dsmetal
+cyber/rocketfar   dsshtfar  $pitchset cyber/rocketfar 1.1
+cyber/blasterfar  dsshtfar  $pitchset cyber/blasterfar 0.8
+
+$alias vile/curse vile/active
+
+mancubus/thrust  dsfwoosh
+mancubus/step    dspocket  $volume mancubus/step 0.4 $pitchset mancubus/step 1.2
+
+barrel/pain     dsbspact
+barrel/walk     dsmetal
+barrel/missile  dsslp
+barrel/jiggle   dsslp
+
+tree/pain1    dspodth1
+tree/pain2    dspodth2
+tree/pain3    dspodth3
+tree/pain4    dspopain
+tree/pain5    dspdiehi
+tree/pain6    dsfdiehi
+tree/pain7    dspfdeth
+tree/pain8    dspldeth
+$random tree/pain {tree/pain1 tree/pain2 tree/pain3 tree/pain4 tree/pain5 tree/pain6 tree/pain7 tree/pain8}
+$pitchshift tree/pain 7
+
+
+
+operatorm/sight    dssgcock
+operatorm/pain     dsplpain
+operatorm/death    dspldeth
+operatorm/taunt    dstauntm
+
+operatorf/sight   dssgcock
+operatorf/pain    dsflpain
+operatorf/death   dsfldeth
+operatorf/taunt   dstauntf
+
+operatorn/sight   dssgcock
+operatorn/pain    dsplpain
+operatorn/death   dspldeth
+operatorn/taunt   dstauntm
+
+operatorb/sight   dssgcock
+operatorb/pain    dskeenpn
+operatorb/death   dskeendt
+operatorb/taunt   dssawful
+
+
+$alias marine/sight operatorm/sight
+$alias marine/pain  operatorm/pain
+$alias marine/death operatorm/death
+$alias marine/taunt operatorm/taunt
+
+$alias marinef/sight operatorf/sight
+$alias marinef/pain  operatorf/pain
+$alias marinef/death operatorf/death
+$alias marinef/taunt operatorf/taunt
+
+$alias marinen/sight operatorn/sight
+$alias marinen/pain  operatorn/pain
+$alias marinen/death operatorn/death
+$alias marinen/taunt operatorn/taunt
+
+$alias marineb/sight operatorb/sight
+$alias marineb/pain  operatorb/pain
+$alias marineb/death operatorb/death
+$alias marineb/taunt operatorb/taunt
+
+
+
+//items
+pickups/soulsphere  dsgetpow
+pickups/talisman    dsgetpow
+pickups/flagpole    dsgetpow
+
+medikit/scan      dsplsidl
+medikit/staple    dsthubm
+medikit/stopper   dspunch
+medikit/done      dsitemup
+medikit/crackle   dsdust  $pitchset medikit/crackle 1.6
+bandage/rip       dsclaw
+bandage/rustle    dspocket
+bloodpack/open    dsgopen
+bloodpack/shake   dspocket
+bloodpack/inject  dschlp $pitchset bloodpack/inject 1.4
+
+roundmaker/chug1  dsthubm
+roundmaker/chug2  dsgopen
+roundmaker/pop    dsbelt
+
+jetpack/fwoosh  dsfwoosh  $limit jetpack/fwoosh 0
+jetpack/bang    dsfirxpl  $limit jetpack/bang 0
+jetpack/on      dsvulcup
+jetpack/wear    dssgcock
+
+derp/hacked       dsvulcup  $pitchset derp/hacked 1.4
+derp/crawl        dsdrpcrl
+derp/crawl2       dsdrpcrl  $pitchset derp/crawl 1.3
+derp/repair       dsdrpcrl
+derp/repair1      dsthubm
+derp/repair2      dsgopen
+derp/repair3      dsrifclk
+$random derp/repairtry  {derp/repair derp/crawl weapons/pocket derp/repair1 derp/repair2 derp/repair3 weapons/fmswitch weapons/grenopen}
+
+herp/hacked       dsvulcup  $pitchset herp/hacked 0.8
+herp/crawl        dsdrpcrl
+herp/beep         dsitemup
+herp/beepready    dsitemup
+herp/shoot        dsrifle
+herp/repair       dssgcock
+herp/repair2      dsbelt
+$random herp/repairtry  {herp/repair herp/crawl herp/beep weapons/pocket weapons/chunksplat weapons/fmswitch weapons/grenopen}
+
+ied/beep          dsitemup
+doorbuster/stick  dsrlload
+
+potion/chug       dsgulp
+potion/open       dschlp    $volume potion/open 0.6 $pitchset potion/open 1.2
+potion/swish      dsslp     $volume potion/swish 0.3
+potion/away       dspocket
+potion/bounce     dschlp    $volume potion/bounce 0.2 $pitchset potion/bounce 1.1
+
+radsuit/burst  dsfwoosh  $pitchset radsuit/burst 1.3
+radsuit/rip    dsclaw    $pitchset radsuit/rip 0.5
+
+blursphere/pickup  dsding
+blursphere/use     dsbgsit2
+blursphere/unuse   dsbgsit1
+blursphere/drop    dsbgsit1
+$alias    blursphere/hallu0    imp/sight
+$alias    blursphere/hallu1    grunt/sight
+$alias    blursphere/hallu2    grunt/active
+$alias    blursphere/hallu3    demon/active
+$alias    blursphere/hallu4    world/riflefar
+$alias    blursphere/hallu5    world/rocketfar
+$alias    blursphere/hallu6    misc/gibbed
+$alias    blursphere/scream  tree/pain
+
+
+//weapons
+weapons/bulletcrack  dsbulcrk  $limit weapons/bulletcrack 0
+weapons/bigcrack     dsthubm   $limit weapons/bigcrack 0
+misc/arccrackle      dsdust    $limit misc/arccrackle 0
+
+weapons/chunkflick  dsrifclk
+weapons/chunksplat  dschlp    $volume weapons/chunksplat 0.4
+weapons/chunkslap   dsrifck2  $volume weapons/chunkslap 0.3
+
+weapons/zerkding   dsitemup  $pitchset weapons/zerkding 1.2
+weapons/zerkding2  dsgetpow  $pitchset weapons/zerkding2 1.5
+
+weapons/grenopen    dsgopen
+weapons/guntouch    dsrifck2
+weapons/fmswitch    dsrifck2
+
+weapons/csawopen    dsriflod
+weapons/csawload    dsgopen
+weapons/csawclose   dsfclk
+weapons/csawtouch   dsrifclk
+weapons/csawbleh    dspocket
+
+weapons/pismagclick  dsrifclk
+weapons/pistoldry    dsrifclk
+weapons/pischamber1  dsrifck2
+weapons/pischamber2  dsrifck2
+
+weapons/deinoblast1  dspistol
+weapons/deinoblast2  dsshtfar
+weapons/deinoclick   dsrifclk
+weapons/deinoeject   dsgopen
+weapons/deinocyl     dsrifck2  $volume weapons/deinocyl 0.3
+weapons/deinoload    dsrifck2
+weapons/deinoopen    dsgopen
+weapons/deinoclose   dsrifclk
+
+weapons/smgchamber    dsrifck2
+weapons/smgmagclick   dsrifclk
+weapons/smgmagmove    dsriflod
+
+weapons/hunter        dsshotg   $limit weapons/hunter 0
+weapons/huntopen      dsfclk
+weapons/huntreload    dsdbload
+weapons/huntrack      dssgcock
+weapons/huntrackup    dssgcock
+weapons/huntrackdown  dssgcock
+weapons/huntshort     dsrifck2
+weapons/slayersingle  dsshotg   $limit weapons/slayersingle 0
+
+weapons/pocket     dspocket
+weapons/subfwoosh  dswoofsh  $limit weapons/subfwoosh 20
+
+weapons/rifle     dsrifle   $limit weapons/rifle 0
+weapons/bigrifle  dsbrifle  $limit weapons/bigrifle 0
+weapons/smack     dspunch
+
+weapons/smg   dspistol  $volume weapons/smg 0.7  $limit weapons/smg 0
+
+weapons/rifleclick    dsrifclk
+weapons/rifleclick2   dsrifck2
+weapons/rifleload     dsriflod
+weapons/rifleunload   dsriflod
+weapons/grenreload    dsrlload
+weapons/riflejam      dsrifclk
+weapons/rifchamber    dsrifclk
+
+weapons/vulcanette    dsrifle  $limit weapons/vulcanette 0
+weapons/vulcbelt      dsbelt
+weapons/vulcmag       dsriflod
+weapons/vulcumag      dsrifclk
+weapons/vulcchamber   dsrifck2
+weapons/vulcanup      dsvulcup
+weapons/vulcandown    dsvulcdn
+weapons/vulcanon      dsbelt
+weapons/vulcshunt     dsgopen
+weapons/vulcopen1     dsdbload //dsriflod in Doom1
+weapons/vulcopen2     dsfclk
+weapons/vulcextract   dsdrpcrl
+weapons/vulcforcemag  dsrifclk
+$random weapons/vulcfix {weapons/vulcshunt weapons/vulcforcemag weapons/vulcumag weapons/vulcbelt}
+$random weapons/vulctryfix {weapons/vulcshunt weapons/vulcforcemag}
+$random weapons/vulctryfix2 {weapons/vulcshunt weapons/vulcopen1 weapons/vulcumag weapons/vulcforcemag weapons/vulcextract weapons/bigcrack weapons/pocket}
+
+weapons/grenadeshot   dsgresht
+
+weapons/rockignite    dsrlaunc
+weapons/rocklaunch    dsfwoosh
+weapons/rockreload    dsrlload
+weapons/rockboom      dsdshtgn
+weapons/rockchamber   dssgcock $volume weapons/rockchamber 0.4 $pitchset weapons/rockchamber 0.9
+weapons/rockopen      dsrifck2
+weapons/rockopen2     dsgopen
+
+weapons/libchamber    dsrifclk
+weapons/libchamber2   dsrifck2
+weapons/libchamber2a  dsrlload
+weapons/grenreload    dsrlload
+
+weapons/plasmas     dsfwoosh  $limit weapons/plasmas 0
+weapons/plasidle    dsplsidl  $limit weapons/plasidle 4
+weapons/plasswitch  dsdbload  //dssgcock in Doom1
+weapons/plasopen    dsfclk
+weapons/plasload    dsriflod
+weapons/plasclose   dsgopen
+weapons/plasclose2  dsrifck2
+weapons/plascrack   dsthubm   $limit weapons/plascrack 0
+
+weapons/bfgcharge   dsplsidl
+weapons/bfgclick    dsrifclk
+weapons/bfglock     dssgcock
+weapons/bfgfwoosh   dsfwoosh
+weapons/bfgclick2   dsrifck2
+weapons/bfgopen     dsfclk
+weapons/bfgbattout  dsriflod
+weapons/bfgbattpop  dsgopen
+
+weapons/bronto       dsdshtgn
+weapons/bronto2      dsbrifle
+weapons/brontoload   dsriflod
+weapons/brontoopen   dsrifck2 $pitchset weapons/brontoclose 1.1
+weapons/brontoclose  dsrifclk $pitchset weapons/brontoclose 1.2
+weapons/brontopop    dsgresht $pitchset weapons/brontopop 1.2
+
+weapons/bigrifle2  dsbrifle
+weapons/boltback   dsbarbwd
+weapons/boltfwd    dsbarfwd
+weapons/bossload   dsrifck2
+weapons/bossloadm  dsriflod
+
+weapons/fragpinin    dssgcock
+weapons/fragpinout   dsrifclk
+weapons/fragspoonoff dstink
+
+tripwire/gumsplat  dschlp
+tripwire/fragclick dsrifck2
+tripwire/fragpain  dsrifclk
+tripwire/break     dsthubm
+
+ammobox/trapped  dsrifclk
+ammobox/burst    dsfirxpl
+ammobox/open     dsrifck2
+
+misc/magdrop  dsknock  $pitchset misc/magdrop 1.2
+misc/magdrop2 dsrifsbm  $pitchset misc/magdrop2 0.7
+
+world/riflefar    dsriffar    $limit world/riflefar 0
+world/vulcfar     dsriffar    $limit world/vulcfar 0
+world/herpfar     dsriffar    $limit world/herpfar 0
+world/shotgunfar  dsshtfar    $limit world/shotgunfar 0
+world/rocketfar   dsrktfar
+world/tbfar       dsrktfar
+world/tbfar2      dsshtfar
+world/bfgfar      dsbfgfar
+world/explode     dsbarexp  $limit world/explode 0
+
+misc/arczap        dsplsidl $limit misc/arczap 0
+misc/arccrackle    dsdust   $limit misc/arccrackle 0
+misc/zap    dsfirxpl  $pitchset misc/zap 1.6 $limit misc/zap 0
+misc/zap2   dsplsidl  $pitchset misc/zap2 1.3 $limit misc/zap 0
+misc/zap3   dsthubm   $pitchset misc/zap3 1.6 $limit misc/zap3 0
+
+misc/fragknock     dsknock
+misc/fragroll      dsfrgrol
+misc/punch         dspunch
+misc/bullethit     dspunch   $volume misc/bullethit 0.3  $limit misc/bullethit 24
+misc/bulletflesh   dschlp    $limit misc/bulletflesh 6
+misc/injection     dschlp    $limit misc/injection 6
+misc/wallchunks    dsdust    $limit misc/wallchunks 4
+misc/smallslop     dsslp
+$random misc/bloodchunks {misc/smallslop null}   $limit misc/bloodchunks 4
+misc/firecrkl      dsflame   $limit misc/firecrkl 0
+misc/bfgrail       dsfwoosh  $limit misc/bfgrail 0
+misc/fwoosh        dsfwoosh  $limit misc/fwoosh 0
+misc/tink          dstink
+misc/heart         dsheart
+misc/casing        dsding    $volume misc/casing 0.4   $limit misc/casing 0
+misc/casing2       dsrifck2  $volume misc/casing2 0.3  $limit misc/casing 2
+misc/casing3       dsrifck2  $volume misc/casing3 0.2  $limit misc/casing 3
+misc/casing4       dsding    $volume misc/casing4 0.9  $limit misc/casing 4
+misc/ladder        dsbelt
+misc/mobshieldf    dsfwoosh
+misc/mobshieldx    dsfwoosh
+misc/mobland       dsland
+misc/glasshit      icedth1  $limit misc/glasshit 0 $pitchset misc/glasshit 1.2
+misc/glassbreak    icebrk1a $limit misc/glassbreak 0 $pitchset misc/glassbreak 3.
+misc/bigbulhol     icebrk1a $limit misc/bigbulhol 0 $pitchset misc/bigbulhol 4.
+
+$alias misc/stimdrop weapons/grenopen
+$alias misc/zerkdrop misc/fragknock
+
+
+//delimit some stock doom sounds
+$limit weapons/pistol 0
+$limit weapons/plasmax 0
+$limit weapons/plasmaf 0
+$limit weapons/sawhit 0
+$limit weapons/sawfull 0
+$limit weapons/rocklaunch 0
+$limit skeleton/tracex 0
+$limit grunt/active 0
+$limit grunt/active1 0
+$limit grunt/active2 0
+$limit grunt/active3 0
+
+
+
+//player stuff
+$playersound    player    male    *usefail      null
+$playersound    player    male    *grunt        null
+$playersound    player    male    *usemeds      dsplpain
+$playersound    player    male    *land         dsland
+$playersound    player    male    *taunt        dstauntm
+
+$playersound    player    female    *usefail      null
+$playersound    player    female    *grunt        null
+$playersound    player    female    *usemeds      dsflpain
+$playersound    player    female    *land         dsland
+$playersound    player    female    *taunt        dstauntf
+
+$playersound    player    neutral    *usefail      null
+$playersound    player    neutral    *grunt        null
+$playersound    player    neutral    *pain100      dsflpain
+$playersounddup    player    neutral    *pain75        *pain100
+$playersounddup    player    neutral    *pain50        *pain100
+$playersounddup    player    neutral    *pain25        *pain100
+$playersound    player    neutral    *usemeds      dsflpain
+$playersound    player    neutral    *land         dsland
+$playersound    player    neutral    *taunt        dstauntf
+$playersound    player    neutral    *death        dsfldeth
+$playersound    player    neutral    *xdeath       dsfdiehi
+
+$playersound     player    other    *usefail      null
+$playersound     player    other    *grunt        null
+$playersound     player    other    *pain100      dskeenpn
+$playersounddup  player    other    *pain75        *pain100
+$playersounddup  player    other    *pain50        *pain100
+$playersounddup  player    other    *pain25        *pain100
+$playersound     player    other    *usemeds        dsdrpcrl
+$playersound     player    other    *land         dsland
+$playersound     player    other    *taunt        dssawful
+$playersound     player    other    *death        dskeendt
+$playersound     player    other    *xdeath       dsbarexp
+
+
+//additional definitions to allow the standard voices to be selected via hd_skin
+player/hdgal/taunt   dstauntf
+player/hdgal/xdeath  dsfdiehi
+player/hdgal/grunt   dsfoof
+player/hdgal/land    dsland
+player/hdgal/meds    dsflpain
+player/hdgal/gibbed  dsslop
+player/hdgal/death   dsfldeth
+player/hdgal/pain    dsflpain
+
+player/hdguy/taunt   dstauntm
+player/hdguy/xdeath  dspdiehi
+player/hdguy/grunt   dsoof
+player/hdguy/land    dsland
+player/hdguy/meds    dsplpain
+player/hdguy/gibbed  dsslop
+player/hdguy/death   dspldeth
+player/hdguy/pain    dsplpain
+
+player/hdbot/taunt   dssawful
+player/hdbot/xdeath  dsbarexp
+player/hdbot/grunt   dsdrpcrl
+player/hdbot/land    dsland
+player/hdbot/meds    dskeenpn
+player/hdbot/gibbed  dsslop
+player/hdbot/death   dskeendt
+player/hdbot/pain    dskeenpn
+

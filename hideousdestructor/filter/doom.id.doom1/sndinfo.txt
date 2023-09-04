@@ -1,0 +1,41 @@
+//HD's SNDINFO for Doom 1
+
+weapons/huntreload dssgload
+weapons/vulcopen1 dsriflod
+weapons/rockboom dsbarexp
+weapons/plasswitch dssgcock
+
+
+caco/bigshot dsbarexp
+weapons/bronto dsbarexp
+
+
+putto/sight dsbgsit2 $volume putto/sight 0.2 $limit putto/sight 0
+putto/spit dsbgsit1 $limit putto/sight 0
+
+
+
+misc/firecrkl  dsflame2
+$limit misc/firecrkl 0
+$alias vile/firecrkl misc/firecrkl
+
+
+
+barrel/pain dsdmpain
+
+
+
+
+//replace D2 Keen sounds on robot with more boring sounds
+operatorb/sight   dssgcock
+operatorb/pain    dsplsidl
+operatorb/death   dsvulcdn
+operatorb/taunt   dssawful
+
+player/hdbot/taunt   dssawful
+player/hdbot/xdeath  dsbarexp
+player/hdbot/grunt   dsdrpcrl
+player/hdbot/land    dsland
+player/hdbot/meds    dsplsidl
+player/hdbot/death   dsvulcdn
+player/hdbot/pain    dsplsidl

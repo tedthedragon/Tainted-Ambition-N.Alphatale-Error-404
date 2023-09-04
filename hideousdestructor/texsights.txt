@@ -1,0 +1,106 @@
+graphic smgrearsight,17,14{
+	xscale 0.5
+	yscale 0.5
+	patch XH25,0,0{}
+}
+graphic smgfrntsit,5,13{
+	patch frntsite,0,0{}
+}
+graphic smgbaksit,27,13{
+	patch backsite,0,0{}
+}
+
+
+graphic psfrntsit,5,13{
+	patch frntsite,0,0{}
+}
+graphic psbaksit,27,13{
+	patch backsite,0,0{}
+}
+
+
+graphic sgfrntsit,5,13{
+	patch frntsite,0,0{}
+}
+graphic sgbaksit,27,13{
+	patch backsite,0,0{}
+}
+
+
+graphic dbfrntsit,5,13{
+	xscale 1.2
+	patch frntsite,0,0{}
+}
+
+graphic z66site,48,40{
+	patch riflsite,0,0{}
+}
+
+
+graphic rlrearsight,17,14{
+	xscale 0.6
+	yscale 0.6
+	patch XH25,0,0{}
+}
+
+
+
+graphic glbaksit,21,6{
+	xscale 0.86
+	yscale 1.1
+	patch backsite,-3,-5{}
+}
+
+
+graphic tbfrntsit,5,13{
+	xscale 0.6
+	yscale 0.5
+	patch frntsite,0,0{}
+}
+graphic tbbaksit,27,13{
+	xscale 0.5
+	patch backsite,0,0{}
+}
+
+graphic libscope,87,85{
+	patch brscope,0,0{}
+}
+graphic libsite,48,40{
+	patch riflsite,0,0{}
+}
+
+
+graphic brfrntsit,5,13{
+	xscale 0.4
+	yscale 0.5
+	patch frntsite,0,0{}
+}
+graphic brret,65,65{
+	xscale 1.22
+	yscale 1.22
+	patch rlret,0,0{}
+}
+graphic brontoscope,87,85{
+	xscale 1.38
+	yscale 1.38
+	patch brscope,0,0{}
+}
+
+
+graphic bsfrntsit,5,13{
+	xscale 0.6
+	yscale 0.5
+	patch frntsite,0,0{}
+}
+graphic bsbaksit,27,13{
+	xscale 0.5
+	patch backsite,0,0{}
+}
+graphic bossret1,213,213{
+	patch reticle1,0,0{}
+}
+graphic bossscope,87,85{
+	patch brscope,0,0{}
+}
+
+
