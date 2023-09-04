@@ -1,0 +1,180 @@
+addkeysection "Hideous Destructor" HideousDestructor
+
+addmenukey "Secondary Reload" +user1
+addmenukey "Switch Fire Mode" +user2
+addmenukey "Mag Manager" +user3
+addmenukey "Unload Weapon" +user4
+addmenukey "Purge Weaponless Ammo" hd_purge
+addmenukey "Drop One Ammo Unit" hd_dropone
+addmenukey "Taunt" hd_taunt
+addmenukey "Play Dead" hd_playdead
+addmenukey "Lean Left" +hd_leanleft
+addmenukey "Lean Right" +hd_leanright
+addmenukey "Lean (use strafe keys)" +hd_lean
+addmenukey "Roll Forward" hd_rollforward
+addmenukey "Roll Backward" hd_rollbackward
+
+addmenukey "Strip Armour" hd_strip
+addmenukey "Cycle Same-Weapon Stack" "use spareweapons"
+addmenukey "Query all operators" checkin
+addmenukey "Rangefinder" hd_findrange
+addmenukey "Use Pistol" hd_pistol
+addmenukey "Use SMG" hd_smg
+addmenukey "Use Grenades" hd_frags
+addmenukey "Use Grenade Slot (0)" hd_fragslot
+addmenukey "Use Stimpack" hd_stims
+addmenukey "Use Medikit" hd_meds
+addmenukey "Attempt To Bandage Wound" hd_band
+addmenukey "Detonate all IEDs" detonate
+addmenukey "Set IEDs passive" iedpassive
+addmenukey "Set IEDs active" iedactive
+addmenukey "Use HERP" "use herpusable"
+addmenukey "Use DERP" "use derpusable"
+addmenukey "DERP goto target" derpgo
+addmenukey "DERP goto self" derpcome
+addmenukey "DERP ambush/idle mode" derpa
+addmenukey "DERP line mode" derpw
+addmenukey "DERP turret mode" derpt
+addmenukey "DERP patrol mode" derpp
+addmenukey "DERP advance N" dmvn
+addmenukey "DERP advance S" dmvs
+addmenukey "DERP advance E" dmve
+addmenukey "DERP advance W" dmvw
+addmenukey "DERP advance NW" dmvnw
+addmenukey "DERP advance NE" dmvne
+addmenukey "DERP advance SW" dmvsw
+addmenukey "DERP advance SE" dmvse
+addmenukey "Use DERP controller" derpcontroller
+
+addmenukey "Reset airburst" "ab 0"
+addmenukey "Set team spawn here" "teamspawn 666"
+addmenukey "Clear team spawn" "teamspawn -1"
+addmenukey "Toggle crouch-slide" hd_slideoff
+
+defaultbind b hd_taunt
+
+alias +hd_altreload +user1;
+alias -hd_altreload -user1;
+alias +hd_firemode +user2;
+alias -hd_firemode -user2;
+alias +hd_unload +user4;
+alias -hd_unload -user4;
+alias hd_slideon "hd_noslide false;rebind hd_slideoff;"
+alias hd_slideoff "hd_noslide true;rebind hd_slideon;"
+
+alias +hd_leanleft "netevent hd_lean -1;"
+alias +hd_leanright "netevent hd_lean 1;"
+alias +hd_lean "netevent hd_lean 999;"
+alias -hd_lean "netevent hd_lean 0;"
+alias -hd_leanleft "netevent hd_lean -99;"
+alias -hd_leanright "netevent hd_lean 99;"
+alias hd_rollforward "netevent hd_forwardroll 20;"
+alias hd_rollbackward "netevent hd_forwardroll -20;"
+
+alias hd_doomguy "give DoomGuyLoadout";
+alias hd_strip "netevent hd_strip";
+alias hd_purge "netevent hd_purge";
+alias hd_dropone "netevent hd_dropone %1";
+alias hd_taunt "netevent hd_taunt";
+alias hd_findrange "netevent hd_findrange";
+alias hd_playdead "netevent hd_playdead";
+alias reflexreticle "netevent reflexreticle %1";
+alias rret "netevent reflexreticle %1";
+alias clearweaponspecial "netevent clearweaponspecial";
+
+alias hd_pistol "use HDPistol";
+alias hd_smg "use HDSMG";
+alias hd_frags "use HDFragGrenades";
+alias hd_fragslot "slot 0";
+alias hd_stims "use PortableStimpack";
+alias hd_meds "use PortableMedikit;wait 1;use HDMedikitter";
+alias hd_potion "use HDHealingPotion";
+alias hd_band "use SelfBandage";
+
+
+alias hdskill_hardcore "hd_killerbarrels 5;hd_shardrate 10500;hd_damagefactor 1;hd_encumbrance 1.2;hd_nobleed false;hd_novilespam true;hd_maxstrength 9.;hd_nokillcount true;"
+alias hdskill_normal "hd_killerbarrels 5;hd_shardrate 0;hd_damagefactor 1;hd_encumbrance 1;hd_nobleed false;hd_novilespam true;hd_maxstrength 11.;hd_nokillcount false;"
+alias hdskill_casual "hd_killerbarrels 0;hd_shardrate 0;hd_damagefactor 0.3;hd_encumbrance 0.;hd_nobleed true;hd_novilespam true;hd_maxstrength 11.;hd_nokillcount false;"
+
+
+alias hd_clearscv "hd_forceloadout none;hd_nobots 0;hd_safelifts true;hd_dirtywindows true;hd_nodoorbuster false;hd_dropeverythingondeath false;hd_flagpole false;hd_pof false;hdskill_normal;echo Hideous Destructor Server CVars reset"
+
+alias hd_clearucv "hd_skin '';hd_height 175;hd_myloadout none;hd_helptext true;hd_noscope 0;hd_crosshairscale 1.0;hd_sightbob true;hd_hudsprite 0;hd_hudusedelay 12;hd_aimsensitivity 0.1;hd_bracesensitivity 1.0;hd_;hd_usefocus true;hd_nozoomlean false;hd_noslide false;hd_maglimit 0;hd_monstervoicepitch true;echo Hideous Destructor User CVars reset"
+
+alias hd_clearmyloadout "hd_myloadout none";
+
+alias hd_clearwepcv "hd_derpmode 4;hd_crosshair 0;hd_nv 7;hd_swapbarrels false;hd_weapondefaults .;echo Hideous Destructor Weapon CVars reset"
+
+
+alias hd_showskins "event hd_showskins";
+alias hd_skins "event hd_showskins";
+alias hd_reflist "event hd_reflist";
+
+
+alias teamspawn "netevent teamspawn %1";
+alias hd_resetlives "netevent hd_resetlives %1";
+
+
+alias ab "netevent ab %1";
+
+alias checkin "netevent checkin";
+
+alias rf "hd_findrange";
+
+alias ied "netevent ied %1 %2";
+alias detonate "netevent ied 999 %1";
+alias iedactive "netevent ied 1 %1";
+alias iedpassive "netevent ied 2 %1";
+alias iedtag "netevent iedtag %1";
+
+alias herp "netevent herp %1 %2 %3";
+alias herptag "netevent herptag %1";
+alias herpdir "netevent herpdir %1 %2";
+
+
+alias derp "netevent derp %1 %2";
+alias derpa "netevent derp 1 %1";
+alias derpw "netevent derp 2 %1";
+alias derpt "netevent derp 3 %1";
+alias derpp "netevent derp 4 %1";
+alias derpcome "netevent derp 5 %1";
+alias derpgo "netevent derp 6 %1";
+alias derptag "netevent derptag %1";
+alias derpcontroller "netevent derp 1024";
+
+alias derpmvsw "netevent derp 801 %1";
+alias derpmvs "netevent derp 802 %1";
+alias derpmvse "netevent derp 803 %1";
+alias derpmvw "netevent derp 804 %1";
+alias derpmve "netevent derp 806 %1";
+alias derpmvnw "netevent derp 807 %1";
+alias derpmvn "netevent derp 808 %1";
+alias derpmvne "netevent derp 809 %1";
+
+alias da "derpa %1";
+alias dw "derpw %1";
+alias dt "derpt %1";
+alias dp "derpp %1";
+alias dcome "derpcome %1";
+alias dc "derpcome %1";
+alias dgo "derpgo %1";
+alias dg "derpgo %1";
+alias dtag "derptag %1";
+
+alias dmvsw "netevent derp 801 %1";
+alias dmvs "netevent derp 802 %1";
+alias dmvse "netevent derp 803 %1";
+alias dmvw "netevent derp 804 %1";
+alias dmve "netevent derp 806 %1";
+alias dmvnw "netevent derp 807 %1";
+alias dmvn "netevent derp 808 %1";
+alias dmvne "netevent derp 809 %1";
+
+alias derppz "derpcome %1";
+alias dtz "derpa %1";
+
+alias db "netevent doorbuster %1 %2";
+alias dbtag "netevent doorbustertag %1";
+alias doorbuster "netevent doorbuster %1 %2";
+alias doorbustertag "netevent doorbustertag %1";
+

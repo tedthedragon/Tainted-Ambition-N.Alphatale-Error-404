@@ -1,0 +1,16 @@
+//different replacements for Plutonia
+actor plutochaingunner:randomspawner replaces chaingunguy{
+	dropitem "vulcanettezombie",256,2
+	dropitem "undeadjackbootman",256,2
+	dropitem "zombiestormtrooper",256,2
+	dropitem "undeadrifleman",256,1
+	dropitem "enemyherp",256,1
+	dropitem "enemyderp",256,1
+}
+actor plutovile:randomspawner replaces archvile{
+	dropitem "necromancer",256,2
+	dropitem "painlord",256,1
+	dropitem "painbringer",256,1
+	dropitem "hdgoon",256,1
+	dropitem "regentipede",256,1
+}

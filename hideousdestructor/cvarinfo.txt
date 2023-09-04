@@ -1,0 +1,92 @@
+server noarchive int hd_debug=0;
+
+//multi meta
+server bool hd_nobots=false;
+server int hd_nodoorbuster=0;
+
+//compatibility
+server bool hd_safelifts=true;
+server bool hd_dirtywindows=true;
+server bool hd_novilespam=true;
+
+//gameplay modes
+server noarchive string hd_forceloadout="";
+server noarchive string hd_noloadout="";
+server noarchive bool hd_pof=false;
+server noarchive bool hd_disintegrator=false;
+server noarchive bool hd_flagpole=false;
+server noarchive bool hd_dropeverythingondeath=false;
+server noarchive bool hd_persistentlives=false;
+server noarchive bool hd_instagib=false;
+
+//difficulty
+server float hd_encumbrance=1.;
+server float hd_maxstrength=11.;
+server float hd_minstrength=1.;
+server int hd_killerbarrels=5;
+server int hd_shardrate=0;
+server float hd_damagefactor=1.;
+server bool hd_nobleed=false;
+server bool hd_nokillcount=false;
+
+user bool hd_hudsprite=false;
+user int hd_noslide=0;
+user float hd_nv=7;
+user int hd_nv_style=7;
+user bool hd_helptext=true;
+user int hd_hudstyle=0;
+user int hd_noscope=0;
+user bool hd_sightbob=true;
+user float hd_crosshairscale=1.;
+user int hd_hudusedelay=12;
+user int hd_crosshair=0;
+user float hd_aimsensitivity=0.1;
+user float hd_bracesensitivity=1.0;
+user bool hd_usefocus=true;
+user bool hd_nozoomlean=false;
+user bool hd_swapbarrels=false;
+user int hd_maglimit=0;
+user bool hd_consolidate=true;
+nosave bool hd_monstervoicepitch=true;
+
+user string hd_skin="";
+user float hd_voicepitch=1.;
+
+user float hd_height=175;
+user float hd_strength=11;
+
+
+user string hd_weapondefaults="";
+user string hd_pronouns="";
+user noarchive string hd_setweapondefault="";
+user int hd_derpmode=4;     //1-4, idle/watch/turret/patrol
+user bool hd_autoactivateied=true;
+
+
+//actually a command
+user noarchive string hd_give="";
+
+
+user noarchive string hd_myloadout="";
+
+user string hd_loadout1="Assault: z66, 450 5, rkt 6, sol";
+user string hd_loadout2="BRLLB0#Heavy Assault: lib nobp, 730 5, rkt 6,sol";
+user string hd_loadout3="Night Raid: smg, 930 5, blo, rkt 4, frg 1, lit, bat, dbs 2, sol";
+user string hd_loadout4="Day Raid: hun, shl 36, blo, rkt 4, frg 4, sol";
+user string hd_loadout5="Cover Fire: vul, 450 7, bat 1, sol";
+user string hd_loadout6="LAUNA0#Explosives: lau, rkt 12, rkh 2, frg 3, sol";
+user string hd_loadout7="Anti-Materiel: bro, brb 20, z66 nogl, 450, sol";
+user string hd_loadout8="Shieldbreaker: thu, bat 6, frg 4,sol";
+user string hd_loadout9="Hideous Destructor: bfg, bat 6, frg 2, sol";
+user string hd_loadout10="V.I.P.: sla, shl 20, pis, 915 2, awb, sol, bak blo. rkt 3. med 2. stm 2. lit. bat 2. shl 40";
+user string hd_loadout11="Sniper: bos frontreticle, pis selectfire, 710 10, 7rl, stm 3, med, drp, 915 2, frg 3, awg";
+user string hd_loadout12="MEDIA0#Medic: pis selectfire, 915 2, zrk 2, med 2, stm 2, sol, bak saw. bat. lit. zrk 3. med 4. stm 7. bld 3. dbs 3";
+user string hd_loadout13="HERPA8A2#Roboticist: pis, drp 3, hrp, ied 3, 915 4, 450 3, bat, med, stm, awg, bak. 450 5. 915 5. bat 3. rkt 6";
+user string hd_loadout14="ARMSA0#Security Guard: pis, 915 2, med, awg";
+user string hd_loadout15="IFOGB0#Insurgent: insurgent";
+user string hd_loadout16="PISTA0#Doomed Guy: doomguy";
+user string hd_loadout17="STFEVL0#Naturist:";
+user string hd_loadout18="pis selectfire, 915 5, sol";
+user string hd_loadout19="sla, shl 30, rev 2, 355 60, sol";
+user string hd_loadout20="bos customchamber, 710 15, rev 2, 355 120, sol";
+

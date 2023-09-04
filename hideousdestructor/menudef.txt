@@ -1,0 +1,279 @@
+//-------------------------------------------------------------------------------------------
+// The player menu
+//-------------------------------------------------------------------------------------------
+
+OptionValue "Pronoun"{
+	0,"$HDOPTIONVALUE_HE"
+	1,"$HDOPTIONVALUE_SHE"
+	2,"$HDOPTIONVALUE_THEY"
+	3,"$HDOPTIONVALUE_IT"
+}
+OptionValue "HudStyle"{
+	0,"$HDOPTIONVALUE_SCREENBLOCKS"
+	1,"$HDOPTIONVALUE_MUGSHOT"
+	2,"$HDOPTIONVALUE_NOMUGSHOT"
+}
+OptionValue "ReflexReticle"{
+	0, "$HDOPTIONVALUE_DOT"
+	1, "$HDOPTIONVALUE_BIGDOT"
+	2, "$HDOPTIONVALUE_CROSSHAIR"
+	3, "$HDOPTIONVALUE_TOPCROSSHAIR"
+	4, "$HDOPTIONVALUE_SMALLCROSSHAIR"
+	5, "$HDOPTIONVALUE_THREEDOTS"
+	6, "$HDOPTIONVALUE_TINYCIRCLE"
+	7, "$HDOPTIONVALUE_SMALLCIRCLE"
+}
+// I don't think this is used anymore but I still did it. - [Ted]
+OptionValue "Autoaim"{
+	0, "$HDOPTIONVALUE_AUTOAIM_NEVER"
+	1, "$HDOPTIONVALUE_AUTOAIM_VERYLOW"
+	2, "$HDOPTIONVALUE_AUTOAIM_LOW"
+	3, "$HDOPTIONVALUE_AUTOAIM_MEDIUM"
+	4, "$HDOPTIONVALUE_AUTOAIM_HIGH"
+	5, "$HDOPTIONVALUE_AUTOAIM_VERYHIGH"
+	6, "$HDOPTIONVALUE_AUTOAIM_ALWAYS"
+}
+OptionValue "NVGStyle"{
+	0, "$HDOPTIONVALUE_HIDEOUSGREEN"
+	1, "$HDOPTIONVALUE_HIDEOUSRED"
+	2, "$HDOPTIONVALUE_ANALOGGREEN"
+	3, "$HDOPTIONVALUE_ANALOGAMBER"
+	4, "$HDOPTIONVALUE_DIGITALGREEN"
+	5, "$HDOPTIONVALUE_DIGITALAMBER"
+	6, "$HDOPTIONVALUE_MODERNGREEN"
+	7, "$HDOPTIONVALUE_TRUECOLOR"
+}
+OptionValue "DoorBuster"{
+	0,"$HDOPTIONVALUE_DOORBUSTER_ALLOWALL"
+	1,"$HDOPTIONVALUE_DOORBUSTER_ALLOWNONE"
+	2,"$HDOPTIONVALUE_DOORBUSTER_DEDICATED"
+}
+OptionValue "DERPModes"{
+	1, "$HDOPTIONVALUE_DERPMODE_IDLE"
+	2, "$HDOPTIONVALUE_DERPMODE_WATCH"
+	3, "$HDOPTIONVALUE_DERPMODE_TURRET"
+	4, "$HDOPTIONVALUE_DERPMODE_PATROL"
+}
+OptionValue "TurnInertia"{
+	0, "$HDOPTIONVALUE_INERTIA_NORMAL"
+	1, "$HDOPTIONVALUE_INERTIA_DISABLEALL"
+	2, "$HDOPTIONVALUE_INERTIA_ACCELONLY"
+}
+OptionValue "NoScope"{
+	0, "$HDOPTIONVALUE_NOSCOPE_SCOPESIGHT"
+	1, "$HDOPTIONVALUE_NOSCOPE_SIGHTSONLY"
+	2, "$HDOPTIONVALUE_NOSLIDE_NEITHER"
+}
+OptionValue "NoSlide"{
+	0,"$HDOPTIONVALUE_NOSLIDE_BOTH"
+	1,"$HDOPTIONVALUE_NOSLIDE_NOSLIDE"
+	2,"$HDOPTIONVALUE_NOSLIDE_NOROLLS"
+	3,"$HDOPTIONVALUE_NOSLIDE_NEITHER"
+}
+
+
+ListMenu "MainMenu"{
+	IfGame(Doom,Chex){
+		StaticPatch 94,2,"M_DOOM"
+		Position 97, 72
+	}
+	IfGame(Strife){
+		StaticPatch 84,2,"M_STRIFE"
+		Position 97, 45
+	}
+	IfGame(Heretic){
+		StaticPatch 88,0,"M_HTIC"
+		StaticPatch 40,10,"M_SKL01"
+		StaticPatch 232,10,"M_SKL00"
+		Position 110, 56
+	}
+	IfGame(Hexen){
+		StaticPatch 88,0,"M_HTIC"
+		StaticPatch 37,80,"FBULB0"
+		StaticPatch 278,80,"FBULA0"
+		Position 110,56
+	}
+	IfGame(Doom,Strife,Chex){
+		PatchItem "M_NGAME","n","HDNewGameLoadoutMenu"
+//			TextItem "HD Loadouts","o","HDLoadoutMenu"
+			TextItem "HD Options","o","HDOptionsMenu"
+//			TextItem "HD Controls","o","HDControlsMenu"
+		ifOption(SwapMenu){
+			PatchItem "M_LOADG","l","LoadGameMenu"
+			PatchItem "M_SAVEG","s","SaveGameMenu"
+			PatchItem "M_OPTION","o","OptionsMenu"
+		}else{
+			PatchItem "M_OPTION","o", "OptionsMenu"
+			PatchItem "M_LOADG", "l", "LoadGameMenu"
+			PatchItem "M_SAVEG", "s", "SaveGameMenu"
+		}
+		PatchItem "M_QUITG","q","QuitMenu"
+	}
+	IfGame(Heretic,Hexen){
+		TextItem "$MNU_NEWGAME","n","PlayerclassMenu"
+		TextItem "$MNU_OPTIONS","o","OptionsMenu"
+		TextItem "$MNU_GAMEFILES","g","GameFilesMenu"
+		TextItem "$MNU_INFO","i","ReadThisMenu"
+		TextItem "$MNU_QUITGAME","q","QuitMenu"
+	}
+}
+
+OptionMenu "HDOptionsMenu"{
+	Title "$HDOPTIONS_TITLE"
+	StaticText " "
+	Submenu "$HDOPTIONS_LOADOUTEDITOR","HDLoadoutMenu"
+	Submenu "$HDOPTIONS_CONFIGURECONTROLS","HDControlsMenu"
+	Submenu "$HDOPTIONS_ADDONMENU", "HDAddonMenu"
+	StaticText " "
+	StaticText "$HDOPTIONS_SERVERSETTINGS",1
+	Command "$HDOPTIONS_PRESETCASUAL", hdskill_casual
+	Command "$HDOPTIONS_PRESETNORMAL", hdskill_normal
+	Command "$HDOPTIONS_PRESETHARDCORE", hdskill_hardcore
+	StaticText " "
+	Slider "$HDOPTIONS_ENCUMBRANCEMULTIPLIER","hd_encumbrance",0,2.,0.05,2
+	Slider "$HDOPTIONS_DAMAGEMULTIPLIER","hd_damagefactor",0.3,3.,0.05,2
+	Slider "$HDOPTIONS_MAXSTRENGTH","hd_maxstrength",0.2,11,0.2,2
+	Option "$HDOPTIONS_NOBLEEDING","hd_nobleed","YesNo"
+	Slider "$HDOPTIONS_KILLERBARRELS","hd_killerbarrels",0,100,5,0
+	Slider "$HDOPTIONS_FRAGTICK","hd_shardrate",0,10500,210,0
+	Option "$HDOPTIONS_ARCHVILESPAM","hd_novilespam","YesNo"
+	Option "$HDOPTIONS_FASTMONSTERS","sv_fastmonsters","YesNo"
+	StaticText " "
+	Option "$HDOPTIONS_CAPLIFTSPEEDS","hd_safelifts","YesNo"
+	Option "$HDOPTIONS_DIRTYWINDOWS","hd_dirtywindows","YesNo"
+	Option "$HDOPTIONS_MAPDESTRUCTION","hd_nodoorbuster","DoorBuster"
+	Option "$HDOPTIONS_REPLACEBOTS","hd_nobots","YesNo"
+	// Option "Only 3 movement speeds in multiplayer","hd_3speed","YesNo" // This cvar is removed?
+	StaticText " "
+	Option "$HDOPTIONS_DROPONDEATH","hd_dropeverythingondeath","YesNo"
+	Option "$HDOPTIONS_POF","hd_pof","YesNo"
+	Option "$HDOPTIONS_DISINTIGRATOR","hd_disintegrator","YesNo"
+	Option "$HDOPTIONS_INSTAGIB","hd_instagib","YesNo"
+	Option "$HDOPTIONS_FLAGPOLE","hd_flagpole","YesNo"
+	StaticText " "
+	SafeCommand "$HDOPTIONS_RESETSERVERSETTINGS","hd_clearscv","$HDOPTIONS_REALLYRESETSERVERSETTINGS"
+
+	StaticText " "
+	StaticText "$HDOPTIONS_USERSETTINGS",1
+	Slider "$HDOPTIONS_HEIGHT","hd_height",140,210,5,0
+	Slider "$HDOPTIONS_STRENGTH","hd_strength",0.2,11,0.2,2
+	Option "$HDOPTIONS_HELPTEXT","hd_helptext","YesNo"
+	Option "$HDOPTIONS_PASSIVESIGHTS","hd_noscope","NoScope"
+	Option "$HDOPTIONS_SIGHTBOB","hd_sightbob","YesNo"
+	Slider "$HDOPTIONS_CROSSHAIRSCALE","hd_crosshairscale",0.1,3.0,0.1,1
+	Slider "$HDOPTIONS_USEKEYDELAY","hd_hudusedelay",-2,70,1,0
+	Option "$HDOPTIONS_HUDSTYLE","hd_hudstyle","HudStyle"
+	Option "$HDOPTIONS_USEASFOCUS","hd_usefocus","YesNo"
+	Slider "$HDOPTIONS_FOCUSKEYSENSITIVITY","hd_aimsensitivity",0.05,0.99,0.05,2
+	Slider "$HDOPTIONS_BRACEDSENS","hd_bracesensitivity",0.05,0.99,0.05,2
+	Option "$HDOPTIONS_NOZOOMLEAN","hd_nozoomlean","YesNo"
+	Option "$HDOPTIONS_SLIDECROUCH","hd_noslide","NoSlide"
+	Option "$HDOPTIONS_SWAPBARRELS","hd_swapbarrels","YesNo"
+	ScaleSlider "$HDOPTIONS_MAGPICKUPLIMIT","hd_maglimit",0,20,1,"No limit"
+	Option "$HDOPTIONS_CONSOLIDATION","hd_consolidate","YesNo"
+	Option "$HDOPTIONS_RANDOMPITCH","hd_monstervoicepitch","YesNo"
+	SafeCommand "$HDOPTIONS_RESETUSERSETTINGS","hd_clearucv","$HDOPTIONS_REALLYRESETUSERSETTINGS"
+
+	StaticText " "
+	StaticText "$HDOPTIONS_USERGEAR",1
+	Option "$HDOPTIONS_DERPMODE","hd_derpmode","DERPModes"
+	Option "$HDOPTIONS_IEDACTIVE","hd_autoactivateied","YesNo"
+	Option "$HDOPTIONS_REFLEXRETICLE","hd_crosshair","ReflexReticle"
+	Slider "$HDOPTIONS_NVGBRIGHTNESS","hd_nv",0,100,1,0
+	Option "$HDOPTIONS_NVGSTYLE","hd_nv_style","NVGStyle"
+	SafeCommand "$HDOPTIONS_RESETWEAPONSETTINGS","hd_clearwepcv","$HDOPTIONS_REALLYRESETWEAPONSETTINGS"
+}
+
+
+OptionMenu "HDControlsMenu"{
+	Title "$HDCONTROLS_TITLE"
+	StaticText " "
+	StaticText "$HDCONTROLS_REGULARWEP",1
+//	Control 	"$CNTRLMNU_ATTACK","+attack"
+//	Control 	"$CNTRLMNU_ALTATTACK","+altattack"
+	StaticText "$HDCONTROLS_REGTEXT1","DarkGrey"
+	StaticText "$HDCONTROLS_REGTEXT2","DarkGrey"
+	Control 	"$CNTRLMNU_RELOAD","+reload"
+	Control "$CNTRLMNU_ZOOM","+zoom"
+	Control "$HDCONTROLS_ALTRELOAD","+user1"
+	Control "$HDCONTROLS_FIREMODE","+user2"
+	Control "$HDCONTROLS_MAGMANAGER","+user3"
+	Control "$HDCONTROLS_UNLOAD","+user4"
+	Control "$HDCONTROLS_DROPWEAPON","weapdrop"
+
+	StaticText " "
+	StaticText "$HDCONTROLS_REGULARMOVEMENT",1
+	StaticText "$HDCONTROLS_REGTEXT3","DarkGrey"
+	StaticText "$HDCONTROLS_REGTEXT4","DarkGrey"
+	Control "$HDCONTROLS_TOGGLERUN","toggle cl_run"
+	Control "$HDCONTROLS_CROUCH","+crouch"
+	Control "$HDCONTROLS_JUMP","+jump"
+	Control "$HDCONTROLS_SPRINT","+speed"
+
+	StaticText " "
+	StaticText "$HDCONTROLS_INVENTORYCONTROLS",1
+	Control "$HDCONTROLS_NEXTITEM","invnext"
+	Control "$HDCONTROLS_PREVIOUSITEM","invprev"
+	Control "$HDCONTROLS_USEITEM","invuse"
+	Control "$HDCONTROLS_DROPITEM","invdrop"
+
+	StaticText " "
+	StaticText "$HDCONTROLS_EXCLUSIVECOMMANDS",1
+	StaticText "$HDCONTROLS_REGTEXT5","DarkGrey"
+	Control "$HDCONTROLS_TAUNT","hd_taunt"
+	Control "$HDCONTROLS_STRIPARMOUR","hd_strip"
+	Control "$HDCONTROLS_DROPONE","hd_dropone"
+	Control "$HDCONTROLS_DROPUSELESS","hd_purge"
+	Control "$HDCONTROLS_CYCLESTACK", "use spareweapons"
+	Control "$HDCONTROLS_CROUCHSLIDE","hd_slideoff"
+	Control "$HDCONTROLS_LEANLEFT","+hd_leanleft"
+	Control "$HDCONTROLS_LEANRIGHT","+hd_leanright"
+	Control "$HDCONTROLS_LEANSTRAFE","+hd_lean"
+	Control "$HDCONTROLS_ROLLFORWARD","hd_rollforward"
+	Control "$HDCONTROLS_ROLLBACKWARD","hd_rollbackward"
+	Control "$HDCONTROLS_SETSPAWN","teamspawn 666"
+	Control "$HDCONTROLS_CLEARSPAWN","teamspawn -1"
+	Control "$HDCONTROLS_QUERYTEAM","checkin"
+	Control "$HDCONTROLS_RANGEFINDER","hd_findrange"
+	Control "$HDCONTROLS_PLAYDEAD","hd_playdead"
+
+	StaticText " "
+	StaticText "$HDCONTROLS_WEPCOMMANDS",1
+	StaticText "$HDCONTROLS_REGTEXT6","DarkGrey"
+	Control "$HDCONTROLS_USEPISTOL","hd_pistol"
+	Control "$HDCONTROLS_USESMG","hd_smg"
+	Control "$HDCONTROLS_USEGRENADES","hd_frags"
+	Control "$HDCONTROLS_USESTIM","hd_stims"
+	Control "$HDCONTROLS_USEMEDIKIT","hd_meds"
+	Control "$HDCONTROLS_USEBANDAGES","hd_band"
+	Control "$HDCONTROLS_USEPOTION","hd_potion"
+	Control "$HDCONTROLS_USEHERP","use herpusable"
+	Control "$HDCONTROLS_USEDERP","use derpusable"
+	StaticText " "
+	Control "$HDCONTROLS_IEDPASSIVE","iedpassive"
+	Control "$HDCONTROLS_IEDACTIVE","iedactive"
+	Control "$HDCONTROLS_DETONATEIED","detonate"
+	StaticText " "
+	Control "$HDCONTROLS_DERPGOTO","derpgo"
+	Control "$HDCONTROLS_DERPSELF","derpcome"
+	Control "$HDCONTROLS_DERPPATROL","derpp"
+	Control "$HDCONTROLS_DERPWATCH","derpa"
+	Control "$HDCONTROLS_DERPTURRET","derpt"
+	Control "$HDCONTROLS_TOGGLEPT","derpat"
+	StaticText " "
+	Control "$HDCONTROLS_DERPMOVE_N","dmvn"
+	Control "$HDCONTROLS_DERPMOVE_S","dmvs"
+	Control "$HDCONTROLS_DERPMOVE_E","dmve"
+	Control "$HDCONTROLS_DERPMOVE_W","dmvw"
+	Control "$HDCONTROLS_DERPMOVE_NE","dmvne"
+	Control "$HDCONTROLS_DERPMOVE_SW","dmvsw"
+	Control "$HDCONTROLS_DERPMOVE_SE","dmvse"
+	Control "$HDCONTROLS_DERPMOVE_NW","dmvnw"
+}
+
+OptionMenu "HDAddonMenu"
+{
+	Title "$HDADDONMENU_TITLE"
+	StaticText "$HDADDONMENU_TEXT1", "White"
+	StaticText "$HDADDONMENU_TEXT2", "Gold"
+}

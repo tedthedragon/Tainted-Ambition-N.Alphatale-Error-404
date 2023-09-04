@@ -1,0 +1,12 @@
+// ------------------------------------------------------------
+//   This lump should only have includes
+// ------------------------------------------------------------
+#include "actors/dceffect.txt"
+#include "actors/dcdeco.txt"
+
+#include "actors/dcplayer.txt"
+
+#include "actors/dcpckups.txt"
+
+#include "actors/dccastcall.txt"
+

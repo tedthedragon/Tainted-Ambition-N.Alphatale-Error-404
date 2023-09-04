@@ -1,0 +1,36 @@
+[en enc enu eng eni ena enz default]
+
+CC_MARINE="marine";
+OB_MARINE="%o was shot up by a marine.";
+OB_MARINEHIT="%o violated a marine's personal space.";
+
+OB_MPCHAINSAW="%o was chewed up in the relentless teeth of %k's inordinately Eager Beaver.";
+
+CC_IMPM="imp fireballer";
+CC_IMPH="imp healer";
+OB_IMP="%o was marinated by the imps.";
+OB_IMP_HIT="%o was tenderized by the imps.";
+OB_IMPH_HIT="%o said I want a second opinion, so the imps said okay you're ugly too.";
+
+FN_WOLFSS="Nazi";
+
+OB_TRILOBITE="%o was inverted by a Cacodemon.";
+OB_TECHNOSPIDER="%o was hammered by an Arachnotron.";
+OB_COMBATSLUG="%o was smoked by a Mancubus.";
+OB_MATRIBITE="%o braved the elements.";
+OB_MATRIBITE_HIT="%o thought it was elementary that certain monsters had no melee attack.";
+OB_HATCHLING="%o found a skull.";
+OB_NECROMANCER="%o met the firepower from an Archvile.";
+OB_TECHNORANTULA="%o was operated upon by the Spider Mastermind.";
+OB_CYBER="%o was experimented upon by a Cyberdemon.";
+OB_ZOMNAZI="%o invoked Godwin's Law.";
+
+
+PICKUP_BFG9000="You got the BFG 9000! Oh yes.";
+
+
+TAG_POTION="healing potion";
+PICKUP_POTION="Picked up a health potion.";
+POTION_TEXT1="\ct!!! \cnPOTION \ct!!!\c-\n\n\nNot made\nby human hands.\n\nBeware.";
+
+
