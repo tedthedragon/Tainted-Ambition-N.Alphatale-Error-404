@@ -1,3 +1,0 @@
-clearepisodes
-episode map01{name="Freedoom Phase 2"}
-episode range{name="Hideous Firing Range" noskillmenu}
