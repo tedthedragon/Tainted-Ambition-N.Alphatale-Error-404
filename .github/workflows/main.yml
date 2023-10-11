@@ -1,0 +1,41 @@
+name: Create Major Release
+
+on:
+  push:
+    branches:
+      - main # Assuming your default branch is named 'main'. Change this if needed.
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Zip the repository
+      run: |
+        zip -r release.zip . -x "*.git*" ".github/*"
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_SECRET }}
+      with:
+        tag_name: ${{ github.run_number }}.0.0
+        release_name: Release ${{ github.run_number }}.0.0
+        body: Major release version ${{ github.run_number }}.0.0
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      id: upload-release-asset 
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_SECRET }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }} 
+        asset_path: ./release.zip
+        asset_name: release.zip
+        asset_content_type: application/zip
+
