@@ -16,6 +16,7 @@ jobs:
     - name: Zip the repository
       run: |
         zip -r release.zip . -x "*.git*" ".github/*"
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
